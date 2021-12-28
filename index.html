@@ -9,19 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"><script>
-$(document).ready(function(){
-  $("#mintbutton").click(function(){
-    $("#backgroundvideocontainer").animate({opacity:'0'},500);
-	  // $("#navbar").animate({opacity:'0'},500);
-	   $("#darkbackgroundoverlay").animate({opacity:'0'},500);
-    $("#herocontainer").animate({opacity:'0'},500);
-    $("#mintvideocontainer").animate({opacity:'1'},500,function(){
-     $('#mintvideo').trigger('play');   
-    });
-  });
-});
-</script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <style type="text/css">
     .swiper {
@@ -56,26 +44,6 @@ $(document).ready(function(){
         object-fit: cover;
       }
     
-model-viewer#reveal {
-    --poster-color: transparent;
-}
-
-    .mint-video-container{
-position:fixed;
-z-index:-2;
-height:100%;
-width:100%;
-        top:0;
-        left:0;
-}
-	
-.mint-video{
-z-index:-2;
-height:100%;
-width:100%;
-object-fit:cover;
-}
-    
 .background-video-container{
 position:fixed;
 z-index:-2;
@@ -98,34 +66,8 @@ z-index:-1;
 height:100%;
 width:100%;
 background:rgba(0,0,0,0.5);
-}
-    
-    .carousel{
-     max-width:400px;
-        padding-bottom:48px;
-    }
-    
-     .carousel-control-prev{
-align-items:flex-end;
-         justify-content:flex-end;
-         width:50%;
-         padding-right:4px;
-	     z-index:0;
-}
-
-.carousel-control-next{
-align-items:flex-end;
-         justify-content:flex-start;
-    width:50%;
-    padding-left:4px;
-	z-index:0;
-}
-    
-    .roadmap-container ul > li {
-    margin-bottom: 4px;
-    margin-top: 4px;
-}
-    
+}  
+     
 .navbar-brand{
 font-size:1.5em;
 font-weight:400;
