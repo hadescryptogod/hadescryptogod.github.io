@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en"><head>
 <title>Home Page | FLY Network</title>
 <meta charset="utf-8">
@@ -9,7 +8,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"><script>
+$(document).ready(function(){
+  $("#mintbutton").click(function(){
+    $("#backgroundvideocontainer").animate({opacity:'0'},500);
+	  // $("#navbar").animate({opacity:'0'},500);
+	   $("#darkbackgroundoverlay").animate({opacity:'0'},500);
+    $("#herocontainer").animate({opacity:'0'},500);
+    $("#mintvideocontainer").animate({opacity:'1'},500,function(){
+     $('#mintvideo').trigger('play');   
+    });
+  });
+});
+</script>
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <style type="text/css">
     .swiper {
@@ -44,6 +55,45 @@
         object-fit: cover;
       }
     
+    .swiper-slide::after{
+     position:absolute;
+z-index:1;
+height:100%;
+width:100%;
+background:rgba(0,0,0,0.5);
+        content:'';
+    }
+    
+    .swiper-pagination-bullet{
+     background:#FFFFFF;
+        width:12px;
+        height:12px;
+    }
+    
+   .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+     right:24px;  
+    }
+    
+model-viewer#reveal {
+    --poster-color: transparent;
+}
+
+    .mint-video-container{
+position:fixed;
+z-index:-2;
+height:100%;
+width:100%;
+        top:0;
+        left:0;
+}
+	
+.mint-video{
+z-index:-2;
+height:100%;
+width:100%;
+object-fit:cover;
+}
+    
 .background-video-container{
 position:fixed;
 z-index:-2;
@@ -66,8 +116,34 @@ z-index:-1;
 height:100%;
 width:100%;
 background:rgba(0,0,0,0.5);
-}  
-     
+}
+    
+    .carousel{
+     max-width:400px;
+        padding-bottom:48px;
+    }
+    
+     .carousel-control-prev{
+align-items:flex-end;
+         justify-content:flex-end;
+         width:50%;
+         padding-right:4px;
+	     z-index:0;
+}
+
+.carousel-control-next{
+align-items:flex-end;
+         justify-content:flex-start;
+    width:50%;
+    padding-left:4px;
+	z-index:0;
+}
+    
+    .roadmap-container ul > li {
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+    
 .navbar-brand{
 font-size:1.5em;
 font-weight:400;
@@ -95,6 +171,7 @@ padding-right: 16px;
 
 .navbar{
 padding:12px 0;
+    background:transparent;
 }
 	
 .nav-link{
@@ -194,46 +271,45 @@ letter-spacing:0px;
 }
 </style>
 </head>
-<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+<body>
     
 
 
-<div id="darkbackgroundoverlay" class="dark-background-overlay"></div>
-	
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-<div class="container">
-<a class="navbar-brand" href="#">FLY<span style="font-weight:700;margin-left:2px;">NETWORK</span></a>
-<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-<div class="navbar-collapse collapse" id="navbarTogglerDemo02" style="">
-<ul class="navbar-nav ms-auto pt-2 pt-lg-0 d-flex justify-content-center align-items-center">
-<li class="nav-item"><a class="nav-link" href="#inventory">INVENTORY</a></li>
-<li class="nav-item"><a class="nav-link" href="#marketplace">MARKETPLACE</a></li><li class="nav-item"><a class="nav-link" href="#staking">STAKING</a></li><li class="nav-item"><a class="nav-link" href="uploads/whitepaper.pdf" target="_blank">WHITEPAPER</a></li>
-<li class="nav-item"><a class="nav-link" href="#wallet"><button class="btn" style="border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);font-size:1em;font-weight:500;">0xC2B3....0544</button></a></li>
-</ul>
-</div>
-</div>
-</nav>
 
-<div id="herocontainer" class="hero-container d-flex justify-content-center align-items-center" style="height: calc(100vh - 75px);">
+	
+
+
+<div id="herocontainer" class="hero-container d-flex justify-content-center align-items-center" style="height: calc(100vh);">
     
    <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+    <div class="swiper mySwiper swiper-initialized swiper-vertical">
+      <div class="swiper-wrapper" id="swiper-wrapper-104cd88c88bb310f8b" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 9" style="height: 761px;"><div class="w-100 h-100">
+  <iframe class="embed-responsive-item w-100 h-100" src="https://sonofdotgithub.github.io" scrolling="no" allowfullscreen=""></iframe>
+</div></div>
+        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 9" style="height: 761px;">Slide 2</div>
+        <div class="swiper-slide" role="group" aria-label="3 / 9" style="height: 761px;">Slide 3</div>
+        <div class="swiper-slide" role="group" aria-label="4 / 9" style="height: 761px;">Slide 4</div>
+        <div class="swiper-slide" role="group" aria-label="5 / 9" style="height: 761px;">Slide 5</div>
+        <div class="swiper-slide" role="group" aria-label="6 / 9" style="height: 761px;">Slide 6</div>
+        <div class="swiper-slide" role="group" aria-label="7 / 9" style="height: 761px;">Slide 7</div>
+        <div class="swiper-slide" role="group" aria-label="8 / 9" style="height: 761px;">Slide 8</div>
+        <div class="swiper-slide" role="group" aria-label="9 / 9" style="height: 761px;">Slide 9</div>
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-vertical"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9"></span></div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 </div>
 
-
+<div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><iframe class="embed-responsive-item w-100 h-100" src="https://flynetworkgithub.github.io" scrolling="no" allowfullscreen=""></iframe></div>
+        <div class="swiper-slide"><iframe class="embed-responsive-item w-100 h-100" src="https://godofcheemsgithub.github.io" scrolling="no" allowfullscreen=""></iframe></div>
+        <div class="swiper-slide"><iframe class="embed-responsive-item w-100 h-100" src="https://sonofdotgithub.github.io" scrolling="no" allowfullscreen=""></iframe></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 	
 
 
@@ -248,6 +324,7 @@ letter-spacing:0px;
         direction: "vertical",
         slidesPerView: 1,
         spaceBetween: 0,
+	loop:true;
         mousewheel: true,
         pagination: {
           el: ".swiper-pagination",
@@ -279,6 +356,7 @@ mirror: false, // whether elements should animate out while scrolling past them
 anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 </script>
+
 
 
 </body></html>
