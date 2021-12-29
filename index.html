@@ -397,10 +397,12 @@ letter-spacing:0px;
 	   
 	    
     </script>
-	  <script>
+	<script>
     $(document).ready(function() {
          $(".slide-title-link").on('click', function(){
-    window.open("http://www.someone.com/","_blank");
+    if(this.parent().hasClass("active")){
+        window.open("http://www.someone.com/","_blank");
+    }
 });
     });
 </script>
