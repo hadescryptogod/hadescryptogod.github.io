@@ -25,6 +25,12 @@ $(document).ready(function(){
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <style type="text/css">
     
+	*{
+-webkit-transition: all .3s cubic-bezier(.785,.135,.15,.86);
+    -ms-transition: all .3s cubic-bezier(.785,.135,.15,.86);
+    transition: all .3s cubic-bezier(.785,.135,.15,.86);
+	}
+	
     .slide-title > a{
          font-size:3em;
         font-weight:700;
@@ -34,7 +40,7 @@ $(document).ready(function(){
     
     .slide-title.active > a{
          color:rgba(255,255,255,1) !important;
-	    font-size:3.5em;
+	    font-size:3.25em;
     }
     
     a{
