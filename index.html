@@ -335,10 +335,10 @@ letter-spacing:0px;
       </div>
       <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-vertical"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span></div>
     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-    <div class="title-wrapper d-flex flex-column" style="position:absolute;bottom:5%;left:5%;z-index:2;">
-        <div class="slide-title active"><a href="#">flynetwork</a></div>
-        <div class="slide-title"><a href="#">godofcheems</a></div>
-        <div class="slide-title"><a href="#">sonofdot</a></div>
+    <div class="title-wrapper d-flex flex-column" style="position:absolute;bottom:5%;left:5%;z-index:2;" data-aos="fade-right">
+        <div class="slide-title"><a href="https://flynetworkgithub.github.io" onclick="swiper.slideTo(0)" data-href="https://flynetworkgithub.github.io">flynetwork</a></div>
+        <div class="slide-title active"><a onclick="swiper.slideTo(1)" data-href="https://godofcheems.com">godofcheems</a></div>
+        <div class="slide-title"><a onclick="swiper.slideTo(2)" data-href="https://sonofdotgithub.github.io">sonofdot</a></div>
     </div>
 
 </div>
@@ -380,14 +380,16 @@ letter-spacing:0px;
         },
       });
 	    
-	   swiper.on('slideChange', function () {
+	    swiper.on('slideChange', function () {
 	  var x = document.getElementsByClassName("slide-title");
   var i;
   for (i = 0; i < x.length; i++) {
     		x[i].classList.remove("active");
+            x[i].removeAttribute("href");
 	  if(i == swiper.activeIndex){
 		  x[swiper.activeIndex].classList.add("active");
-	  }
+           x[i].href = x[i].getAttribute('data-href');                
+      }
   }
 });
 	    
