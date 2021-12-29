@@ -386,10 +386,10 @@ letter-spacing:0px;
   var i;
   for (i = 0; i < x.length; i++) {
     		x[i].classList.remove("active");
-            x[i].removeAttribute("href");
+            x[i].querySelectorAll("a")[0].removeAttribute("href");
 	  if(i == swiper.activeIndex){
-		  x[swiper.activeIndex].classList.add("active");
-           x[i].href = x[i].getAttribute('data-href');                
+		  x[i].classList.add("active");
+           x[i].querySelectorAll("a")[0].href = x[i].querySelectorAll("a")[0].getAttribute("data-href");                
       }
   }
 });
