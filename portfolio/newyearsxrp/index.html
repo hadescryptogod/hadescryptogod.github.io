@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>Home Page | FLY Network</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>
+$(document).ready(function(){
+  $("#mintbutton").click(function(){
+    $("#backgroundvideocontainer").animate({opacity:'0'},500);
+	  // $("#navbar").animate({opacity:'0'},500);
+	   $("#darkbackgroundoverlay").animate({opacity:'0'},500);
+    $("#herocontainer").animate({opacity:'0'},500);
+    $("#mintvideocontainer").animate({opacity:'1'},500,function(){
+     $('#mintvideo').trigger('play');   
+    });
+  });
+});
+</script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<style type="text/css">
+model-viewer#reveal {
+    --poster-color: transparent;
+}
+
+    .mint-video-container{
+position:fixed;
+z-index:-2;
+height:100%;
+width:100%;
+        top:0;
+        left:0;
+}
+	
+.mint-video{
+z-index:-2;
+height:100%;
+width:100%;
+object-fit:cover;
+}
+    
+.background-video-container{
+position:fixed;
+z-index:-2;
+height:100%;
+width:100%;
+    top:0;
+    left:0;
+}
+	
+.background-video{
+z-index:-2;
+height:100%;
+width:100%;
+object-fit:cover;
+}
+    
+.dark-background-overlay{
+position:fixed;
+z-index:-1;
+height:100%;
+width:100%;
+background:rgba(0,0,0,0.5);
+}
+    
+    .carousel{
+     max-width:400px;
+        padding-bottom:48px;
+    }
+    
+     .carousel-control-prev{
+align-items:flex-end;
+         justify-content:flex-end;
+         width:50%;
+         padding-right:4px;
+	     z-index:0;
+}
+
+.carousel-control-next{
+align-items:flex-end;
+         justify-content:flex-start;
+    width:50%;
+    padding-left:4px;
+	z-index:0;
+}
+    
+    .roadmap-container ul > li {
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+    
+.navbar-brand{
+font-size:1.5em;
+font-weight:400;
+color:#FFFFFF !important;
+letter-spacing:3px;   
+}
+    
+body{
+color:#FFFFFF;
+font-family: 'Space Grotesk', sans-serif;
+font-weight:500;
+font-size:14px;
+}
+	
+*:focus{
+box-shadow:none !important;
+outline: 0 !important;
+}
+
+.container{
+max-width:1140px;
+padding-left: 16px;
+padding-right: 16px;
+}
+
+.navbar{
+padding:12px 0;
+}
+	
+.nav-link{
+color:#FFFFFF !important;
+font-size:1em;
+letter-spacing:1.5px;
+}
+	
+.hero-container p{
+font-size:1.25em;
+}
+	
+.btn-primary{
+color: #FFFFFF;
+background-color: #FFEB3B;
+border-color: #FFEB3B;
+position: relative;
+z-index: 1;
+overflow: hidden;
+border: solid 1px #FFEB3B;
+border-radius:2em;
+padding:16px 20px;
+font-weight:700;
+letter-spacing:0px;
+}
+	
+.btn-primary:hover, .btn-primary:focus {
+background-color: #FFEB3B !important;
+font-color:#FFFFFF !important;
+border: solid 1px #FFEB3B !important;
+}
+	
+@media (min-width: 576px){
+.hero-container p{
+font-size:1.25em;
+}
+}
+
+@media (min-width: 768px) {
+.hero-container h1{
+font-size:3.5em;
+}
+}
+
+@media (min-width: 992px) {
+    
+    .carousel-control-prev{
+margin-left:-75px;
+        align-items:center;
+         justify-content:center;
+        width:15%;
+         padding-right:0px;
+	    z-index:0;
+}
+
+.carousel-control-next{
+margin-right:-75px;
+     align-items:center;
+         justify-content:center;
+    width:15%;
+    padding-left:0px;
+	z-index:0;
+}
+    
+    .carousel{padding-bottom:0px;
+    }
+    
+    h4{
+	font-size:1.5em;    
+	}
+	
+.hero-container p{
+font-size:1.5em;
+}
+
+.hero-container h1{
+ font-size:4em;
+}
+    
+.navbar-expand-lg .navbar-nav .nav-link {
+padding-right: 1.125rem;
+padding-left: 1.125rem;	
+}
+
+.navbar-expand-lg .navbar-nav .nav-item:last-child > .nav-link{
+padding-right: 0rem !important;
+}}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {
+h1{
+font-weight:700;
+font-size:calc(3.375rem + 2.5vw);
+letter-spacing:0px;
+}
+}
+</style>
+</head>
+<body>
+    <div id="mintvideocontainer" class="mint-video-container" style="opacity: 0;">
+<video id="mintvideo" class="mint-video">
+<source src="assets/mintvideo.mp4" type="video/mp4">
+</video>
+</div>
+<div id="backgroundvideocontainer" class="background-video-container">
+<video class="background-video" autoplay="" muted="" loop="">
+<source src="assets/backgroundvideo2.webm" type="video/webm">
+</video>
+</div>
+
+<div id="darkbackgroundoverlay" class="dark-background-overlay"></div>
+	
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand" href="#">FLY<span style="font-weight:700;margin-left:2px;">NETWORK</span></a>
+<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<div class="navbar-collapse collapse" id="navbarTogglerDemo02" style="">
+<ul class="navbar-nav ms-auto pt-2 pt-lg-0 d-flex justify-content-center align-items-center">
+<li class="nav-item"><a class="nav-link" href="#inventory">INVENTORY</a></li>
+<li class="nav-item"><a class="nav-link" href="#marketplace">MARKETPLACE</a></li><li class="nav-item"><a class="nav-link" href="#staking">STAKING</a></li><li class="nav-item"><a class="nav-link" href="uploads/whitepaper.pdf" target="_blank">WHITEPAPER</a></li>
+<li class="nav-item"><a class="nav-link" href="#wallet"><button class="btn" style="border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);font-size:1em;font-weight:500;">0xC2B3....0544</button></a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div id="herocontainer" class="hero-container d-flex justify-content-center align-items-center" style="height: calc(100vh - 75px);" data-aos="fade-up">
+    
+    <div class="container">
+        <div class="row">
+<div class="col-12">
+    <div data-bs-ride="carousel" data-bs-touch="false" class="carousel slide carousel-fade mx-auto" id="carouselExampleControls">
+  <div class="carousel-inner">
+    <div class="carousel-item ratio ratio-1x1" data-bs-interval="10000">
+        
+<model-viewer interaction-prompt="none" environment-image="neutral" camera-controls="" src="assets/venus.glb" auto-rotate="" ar-status="not-presenting">
+</model-viewer>
+    </div>
+    <div class="carousel-item ratio ratio-1x1" data-bs-interval="10000">
+        
+<model-viewer auto-rotate="" src="assets/io.glb" camera-controls="" environment-image="neutral" interaction-prompt="none" ar-status="not-presenting">
+</model-viewer>
+    </div>
+    <div class="carousel-item ratio ratio-1x1 active" data-bs-interval="10000">
+       
+<model-viewer auto-rotate="" src="assets/ganymede.glb" camera-controls="" environment-image="neutral" interaction-prompt="none" ar-status="not-presenting">
+</model-viewer>
+    </div>
+  </div>
+  <button data-bs-slide="prev" data-bs-target="#carouselExampleControls" type="button" class="carousel-control-prev">
+    <div class="d-flex flex-column justify-content-center align-items-center" style="height:32px;width:32px;border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);"><span style="height:16px;width:16px;" class="carousel-control-prev-icon" aria-hidden="true"></span></div>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <div class="d-flex flex-column justify-content-center align-items-center" style="height:32px;width:32px;border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);"><span style="height:16px;width:16px;" class="carousel-control-next-icon" aria-hidden="true"></span></div>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    
+	<!--
+<div data-bs-ride="carousel" data-bs-touch="false" class="carousel slide carousel-fade mx-auto" id="carouselExampleControls">
+  <div class="carousel-inner" style="border-radius:16px;box-shadow: rgba(255, 255, 255, 0.1) 0px 2px 8px 0px;">
+    <div class="carousel-item ratio active" style="--bs-aspect-ratio: 66.7%;" data-bs-interval="5000">
+<video class="background-video" autoplay="" muted="" loop="">
+<source src="assets/nft-planet-1.mp4" type="video/mp4">
+</video></div>
+    <div class="carousel-item ratio" style="--bs-aspect-ratio: 66.7%;" data-bs-interval="5000">
+    <video class="background-video" autoplay="" muted="" loop="">
+<source src="assets/nft-planet-2.mp4" type="video/mp4">
+</video>  
+    </div>
+  </div>
+  <button data-bs-slide="prev" data-bs-target="#carouselExampleControls" type="button" class="carousel-control-prev">
+    <div class="d-flex flex-column justify-content-center align-items-center" style="height:32px;width:32px;border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);"><span style="height:16px;width:16px;" class="carousel-control-prev-icon" aria-hidden="true"></span></div>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <div class="d-flex flex-column justify-content-center align-items-center" style="height:32px;width:32px;border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);"><span style="height:16px;width:16px;" class="carousel-control-next-icon" aria-hidden="true"></span></div>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+	-->
+</div>
+</div>
+	<div class="row mt-5">
+<div class="col-12 d-flex justify-content-center align-items-center">
+<button id="mintbutton" class="btn" style="padding:12px 24px;border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);font-size:1em;font-weight:500;letter-spacing:2px;">MINT PLANET NFT</button>
+</div>
+</div>
+    </div>
+
+</div>
+
+<div id="roadmap-container" class="roadmap-container" data-aos="fade-up">
+<div class="container py-5">
+    <h2 class="text-center mb-4" style="font-size:2.5em;font-weight:700;">ROADMAP</h2>
+<div class="row">
+<div class="col-12">
+
+
+<div class="row mb-1">
+<div class="col-12 col-lg-3 text-center py-3">
+<h4><b>Phase 1</b></h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Lorem ipsum dolor <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00C2A8" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Consectetur adipiscing elit <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00C2A8" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Sed do eiusmod <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00C2A8" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Tempor incididunt ut <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00C2A8" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>labore et dolore <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00C2A8" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Enim ad minim <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00C2A8" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+</ul>
+</div>
+<div class="col-12 col-lg-3 text-center py-3">
+<h4><b>Phase 2</b></h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Quis nostrud exercitation</li>
+<li>Ullamco laboris nisi</li>
+<li>Duis aute irure</li>
+<li>Dolor in reprehenderit</li>
+<li>Voluptate velit esse</li>
+<li>Cillum dolore eu</li>
+</ul>
+</div>
+<div class="col-12 col-lg-3 text-center py-3">
+<h4><b>Phase 3</b></h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Fugiat nulla pariatur</li>
+<li>Excepteur sint occaecat</li>
+<li>cupidatat non proident</li>
+<li>Sunt in culpa</li>
+<li>Qui officia deserunt</li>
+<li>Mollit anim id</li>
+</ul>
+</div>
+<div class="col-12 col-lg-3 text-center py-3">
+<h4><b>Phase 4</b></h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Sed ut perspiciatis</li>
+<li>Unde omnis iste</li>
+<li>Sit voluptatem accusantium</li>
+<li>Totam rem aperiam</li>
+<li>eaque ipsa quae</li>
+<li>Illo inventore veritatis</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+	
+<div id="under-development-container" class="under-development-container" data-aos="fade-up">
+<div class="container py-5">
+    <h2 class="text-center mb-4" style="font-size:2.5em;font-weight:700;">WEBSITE UNDER DEVELOPMENT</h2>
+
+</div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+AOS.init({
+// Global settings:
+disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+initClassName: 'aos-init', // class applied after initialization
+animatedClassName: 'aos-animate', // class applied on animation
+useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+offset: 120, // offset (in px) from the original trigger point
+delay: 0, // values from 0 to 3000, with step 50ms
+duration: 1000, // values from 0 to 3000, with step 50ms
+easing: 'ease', // default easing for AOS animations
+once: false, // whether animation should happen only once - while scrolling down
+mirror: false, // whether elements should animate out while scrolling past them
+anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+});
+</script>
+
+</body></html>
+
