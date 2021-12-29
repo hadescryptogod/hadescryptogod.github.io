@@ -44,13 +44,28 @@ $(document).ready(function(){
         font-weight:700;
         letter-spacing:normal;
         color:rgba(255,255,255,0.4) !important;
+	display: flex;
+	flex-direction: row;
+	 align-items:center;
+	 justify-content:center;
     }
     
+	.slide-title > a > arrow{
+         margin-left:0px;
+		display: inline-flex;
+		flex-direction: row;
+		align-items:center;
+		justify-content:center;
+		
+    }
+	
     .slide-title.active > a{
          color:rgba(255,255,255,1) !important;
 	    font-size:3.25em;
     }
     
+	
+	
     a{
      text-decoration: none;
     cursor: pointer;   
