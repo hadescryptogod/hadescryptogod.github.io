@@ -7,7 +7,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"><script>
@@ -91,7 +91,7 @@ $(document).ready(function(){
       .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: #fff;
+        background: transparent;
 
         /* Center slide text vertically */
         display: -webkit-box;
@@ -114,7 +114,7 @@ $(document).ready(function(){
         height: 100%;
         object-fit: cover;
       }
-    
+    /*
     .swiper-slide::after{
      position:absolute;
 z-index:1;
@@ -123,7 +123,7 @@ width:100%;
 background:rgba(0,0,0,0.6);
         content:'';
     }
-    
+    */
      .swiper-pagination{
     }
     
@@ -216,7 +216,7 @@ letter-spacing:3px;
     
 body{
 color:#FFFFFF;
-font-family: 'Inter', sans-serif;
+font-family: 'Orbitron', sans-serif;
 font-weight:400;
 font-size:14px;
 }
@@ -227,7 +227,7 @@ outline: 0 !important;
 }
 
 .container{
-max-width:1140px;
+
 padding-left: 16px;
 padding-right: 16px;
 }
@@ -242,7 +242,39 @@ color:#FFFFFF !important;
 font-size:1em;
 letter-spacing:1.5px;
 }
-	
+
+    .hero-container h1{
+font-size:1.5em;
+        font-weight:700;
+        animation: pulsate 2.5s infinite alternate; 
+}
+  
+    @keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 1px #fff,
+      0 0 3px #fff,
+      0 0 5px #fff,
+      0 0 10px #FF28FF,
+      0 0 20px #FF28FF,
+      0 0 22.5px #FF28FF,
+      0 0 25px #FF28FF,
+      0 0 35px #FF28FF;
+  }
+  0% {
+    /* Smaller blur radius */
+    text-shadow:
+      0 0 1px #fff,
+      0 0 1.5px #fff,
+      0 0 2.5px #FF28FF,
+      0 0 11px #FF28FF,
+      0 0 15px #FF28FF,
+      0 0 17.5px #FF28FF,
+      0 0 20px #FF28FF;
+  }
+}
+    
 .hero-container p{
 font-size:1.25em;
 }
@@ -266,7 +298,8 @@ background-color: #FFEB3B !important;
 font-color:#FFFFFF !important;
 border: solid 1px #FFEB3B !important;
 }
-	
+
+
 @media (min-width: 576px){
 .hero-container p{
 font-size:1.25em;
@@ -275,7 +308,7 @@ font-size:1.25em;
 
 @media (min-width: 768px) {
 .hero-container h1{
-font-size:3.5em;
+font-size:2.48em;
 }
 }
 
@@ -323,7 +356,7 @@ font-size:1.5em;
 }
 
 .hero-container h1{
- font-size:4em;
+ font-size:3.35em;
 }
     
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -335,36 +368,47 @@ padding-left: 1.125rem;
 padding-right: 0rem !important;
 }}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .hero-container h1{
+ font-size:4em;
+}
+    }
 
 @media (min-width: 1400px) {
-h1{
-font-weight:700;
-font-size:calc(3.375rem + 2.5vw);
-letter-spacing:0px;
-}
+.container{
+max-width:1140px;
+    }
 }
 </style>
 </head>
-<body>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+    
   <div id="herocontainer" class="hero-container d-flex justify-content-center align-items-center" style="height: calc(100vh);">
- 
+ <div id="backgroundvideocontainer" class="background-video-container">
+<video class="background-video" autoplay="" muted="" loop="">
+<source src="assets/newyearsxrp-video-background.webm" type="video/webm">
+</video>
+</div>
 	 <!-- Swiper -->
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper swiper-initialized swiper-vertical swiper-pointer-events" style="background:transparent;">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><iframe class="embed-responsive-item w-100 h-100" src="" scrolling="no" allowfullscreen=""></iframe></div>
-        <div class="swiper-slide"><iframe class="embed-responsive-item w-100 h-100" src="https://hadescryptogod.github.io/portfolio/godofcheems" scrolling="no" allowfullscreen=""></iframe></div>
-        <div class="swiper-slide"><iframe class="embed-responsive-item w-100 h-100" src="https://hadescryptogod.github.io/portfolio/sonofdot" scrolling="no" allowfullscreen=""></iframe></div>
+        <div class="swiper-slide"><div class="container">
+<div class="row">
+<div class="col-12"><h1>#XRP #RIPPLENEWYEARS</h1></div>
+</div>
+</div></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
       </div>
       <div class="swiper-pagination"></div>
-	 <div class="title-wrapper d-flex flex-column" style="position:absolute;bottom:5%;left:5%;z-index:2;" data-aos="fade-right">
+	 <div class="d-none title-wrapper d-flex flex-column aos-init aos-animate" style="position:absolute;bottom:5%;left:5%;z-index:2;" data-aos="fade-right">
        <div class="slide-title active"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/flynetwork" data-title-index="0">flynetwork<i class="arrow fi fi-rr-arrow-small-right"></i></a></div>
         <div class="slide-title"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/godofcheems" data-title-index="1">godofcheems<i class="arrow fi fi-rr-arrow-small-right"></i></a></div>
         <div class="slide-title"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/sonofdot" data-title-index="2">sonofdot<i class="arrow fi fi-rr-arrow-small-right"></i></a></div>
     </div>    
-	    <div class="author-wrapper d-flex flex-column" style="position:absolute;top:5%;right:5%;z-index:3;" data-aos="fade-left"><a href="https://t.me/hadescryptogod" target="_blank">@hadescryptogod</a>
+	    <div class="d-none author-wrapper d-flex flex-column aos-init aos-animate" style="position:absolute;top:5%;right:5%;z-index:3;" data-aos="fade-left"><a href="https://t.me/hadescryptogod" target="_blank">@hadescryptogod</a>
     </div>
-    </div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 	
 
 <script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><!-- Import the component -->
@@ -448,4 +492,5 @@ anchorPlacement: 'top-bottom', // defines which position of the element regardin
 
 
 
-</div></body></html>
+</div>
+</body></html>
