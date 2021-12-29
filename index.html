@@ -351,12 +351,14 @@ letter-spacing:0px;
 	  <script>
     $(document).ready(function() {
          $(".slide-title-link").on('click', function(){
-		 console.log($(this).parent().hasClass("active"));
+		 if($(this).parent().hasClass("active")){
+        	window.open($(this).data("href"),"_blank");
+    		}
 		 //console.log($(this).data("title-index"));
 		 $(".slide-title-link").removeClass("active");
 		 swiper.slideTo($(this).data("title-index"));
 		
-   /* if(){
+   /* if($(this).parent().hasClass("active")){
         window.open("http://www.someone.com/","_blank");
     }
     */
