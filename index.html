@@ -400,7 +400,7 @@ letter-spacing:0px;
 	<script>
     $(document).ready(function() {
          $(".slide-title-link").on('click', function(){
-		 console.log(this.parent().hasClass("active"));
+		 console.log($(this).parent().hasClass("active"));
    /* if(){
         window.open("http://www.someone.com/","_blank");
     }
