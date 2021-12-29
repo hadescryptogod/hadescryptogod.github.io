@@ -55,23 +55,20 @@ $(document).ready(function(){
 		flex-direction: row;
 		align-items:center;
 		justify-content:center;
-		overflow:hidden;
+		opacity:0;
 		
     }
-	
-	.slide-title > a > .arrow::before{
-         margin-left:-40px;
-	}
 	
     .slide-title.active > a{
          color:rgba(255,255,255,1) !important;
 	    font-size:3.25em;
     }
-    
-	.slide-title.active > a > .arrow::before{
-         margin-left:0px;
-	}
 	
+	.slide-title.active > a > .arrow{
+        opacity:1;
+		
+    }
+    
 	
     a{
      text-decoration: none;
