@@ -55,14 +55,22 @@ $(document).ready(function(){
 		flex-direction: row;
 		align-items:center;
 		justify-content:center;
+		overflow:hidden;
 		
     }
+	
+	.slide-title > a > .arrow{
+         margin-left:-40px;
+	}
 	
     .slide-title.active > a{
          color:rgba(255,255,255,1) !important;
 	    font-size:3.25em;
     }
     
+	.slide-title.active > a > .arrow{
+         margin-left:0px;
+	}
 	
 	
     a{
@@ -350,9 +358,9 @@ letter-spacing:0px;
       </div>
       <div class="swiper-pagination"></div>
 	 <div class="title-wrapper d-flex flex-column" style="position:absolute;bottom:5%;left:5%;z-index:2;" data-aos="fade-right">
-       <div class="slide-title active"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/flynetwork" data-title-index="0">flynetwork</a></div>
-        <div class="slide-title"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/godofcheems" data-title-index="1">godofcheems</a></div>
-        <div class="slide-title"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/sonofdot" data-title-index="2">sonofdot</a></div>
+       <div class="slide-title active"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/flynetwork" data-title-index="0">flynetwork<i class="arrow fi fi-rr-arrow-small-right"></i></a></div>
+        <div class="slide-title"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/godofcheems" data-title-index="1">godofcheems<i class="arrow fi fi-rr-arrow-small-right"></i></a></div>
+        <div class="slide-title"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/sonofdot" data-title-index="2">sonofdot<i class="arrow fi fi-rr-arrow-small-right"></i></a></div>
     </div>    
 	    <div class="author-wrapper d-flex flex-column" style="position:absolute;top:5%;right:5%;z-index:3;" data-aos="fade-left"><a href="https://t.me/hadescryptogod">@hadescryptogod</a>
     </div>
