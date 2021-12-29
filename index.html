@@ -31,6 +31,13 @@ $(document).ready(function(){
     transition: all .3s cubic-bezier(.785,.135,.15,.86);
 	}
 	
+	.author-wrapper a{ 
+		font-size:2em;
+		font-weight: 700;
+		letter-spacing: normal;
+		color: rgba(255,255,255,1) !important;
+	}
+	
     .slide-title > a{
          font-size:3em;
         font-weight:700;
@@ -251,6 +258,10 @@ font-size:3.5em;
 
 @media (min-width: 992px) {
     
+	.author-wrapper a{ 
+		font-size:3em;
+	}
+	
 	 .slide-title > a{
          font-size:4.5em;
     }
@@ -352,6 +363,8 @@ letter-spacing:0px;
         <div class="slide-title"><a onclick="swiper.slideTo(1)">godofcheems</a></div>
         <div class="slide-title"><a onclick="swiper.slideTo(2)">sonofdot</a></div>
     </div>    
+	    <div class="author-wrapper d-flex flex-column" style="position:absolute;top:5%;right:5%;z-index:3;"><a href="https://t.me/hadescryptogod">@hadescryptogod</a>
+    </div>
     </div>
 	
 
