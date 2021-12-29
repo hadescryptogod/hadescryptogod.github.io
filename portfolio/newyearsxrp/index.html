@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<title>Home Page | FLY Network</title>
+<title>My Portfolio | @hadescryptogod</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/uicons-regular-rounded.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"><script>
 $(document).ready(function(){
   $("#mintbutton").click(function(){
     $("#backgroundvideocontainer").animate({opacity:'0'},500);
@@ -22,6 +25,118 @@ $(document).ready(function(){
 </script>
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <style type="text/css">
+    
+	
+	
+	.author-wrapper a{ 
+		font-size:2em;
+		font-weight: 700;
+		letter-spacing: normal;
+		color: rgba(255,255,255,1) !important;
+	}
+	
+    .slide-title > a{
+         font-size:3em;
+        font-weight:700;
+        letter-spacing:normal;
+        color:rgba(255,255,255,1) !important;
+	display: flex;
+	flex-direction: row;
+	 align-items:center;
+	    opacity:0.5;
+	    -webkit-transition: all .2s cubic-bezier(.785,.135,.15,.86);
+	    -ms-transition: all .2s cubic-bezier(.785,.135,.15,.86);
+   	 transition: all .2s cubic-bezier(.785,.135,.15,.86);
+    }
+    
+	.slide-title > a > .arrow{
+         margin-left:0px;
+		display: inline-flex;
+		flex-direction: row;
+		align-items:center;
+		justify-content:center;
+		opacity:0;
+		-webkit-transition: all .1s cubic-bezier(.785,.135,.15,.86);
+    		-ms-transition: all .1s cubic-bezier(.785,.135,.15,.86);
+   		 transition: all .1s cubic-bezier(.785,.135,.15,.86);
+		
+    }
+	
+    .slide-title.active > a{
+         color:rgba(255,255,255,1) !important;
+	    font-size:3.25em;
+	    opacity:1;
+    }
+	
+	.slide-title.active > a > .arrow{
+        opacity:1;
+		
+    }
+    
+	
+    a{
+     text-decoration: none;
+    cursor: pointer;   
+        color:inherit;
+    }
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+	    position:fixed;
+	    top:0;
+	    left:0;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+    .swiper-slide::after{
+     position:absolute;
+z-index:1;
+height:100%;
+width:100%;
+background:rgba(0,0,0,0.6);
+        content:'';
+    }
+    
+     .swiper-pagination{
+    }
+    
+    .swiper-pagination-bullet{
+     background:#FFFFFF;
+        width:12px;
+        height:12px;
+    }
+    
+   .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+     right:24px;  
+    }
+    
 model-viewer#reveal {
     --poster-color: transparent;
 }
@@ -63,7 +178,7 @@ position:fixed;
 z-index:-1;
 height:100%;
 width:100%;
-background:rgba(0,0,0,0.5);
+background:rgba(0,0,0,0.4);
 }
     
     .carousel{
@@ -101,8 +216,8 @@ letter-spacing:3px;
     
 body{
 color:#FFFFFF;
-font-family: 'Space Grotesk', sans-serif;
-font-weight:500;
+font-family: 'Inter', sans-serif;
+font-weight:400;
 font-size:14px;
 }
 	
@@ -119,6 +234,7 @@ padding-right: 16px;
 
 .navbar{
 padding:12px 0;
+    background:transparent;
 }
 	
 .nav-link{
@@ -165,6 +281,18 @@ font-size:3.5em;
 
 @media (min-width: 992px) {
     
+	.author-wrapper a{ 
+		font-size:3em;
+	}
+	
+	 .slide-title > a{
+         font-size:4.5em;
+    }
+    
+    .slide-title.active > a{
+	    font-size:5.25em;
+    }
+	
     .carousel-control-prev{
 margin-left:-75px;
         align-items:center;
@@ -219,168 +347,79 @@ letter-spacing:0px;
 </style>
 </head>
 <body>
-    <div id="mintvideocontainer" class="mint-video-container" style="opacity: 0;">
-<video id="mintvideo" class="mint-video">
-<source src="assets/mintvideo.mp4" type="video/mp4">
-</video>
-</div>
-<div id="backgroundvideocontainer" class="background-video-container">
-<video class="background-video" autoplay="" muted="" loop="">
-<source src="assets/backgroundvideo2.webm" type="video/webm">
-</video>
-</div>
-
-<div id="darkbackgroundoverlay" class="dark-background-overlay"></div>
+  <div id="herocontainer" class="hero-container d-flex justify-content-center align-items-center" style="height: calc(100vh);">
+ 
+	 <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><iframe class="embed-responsive-item w-100 h-100" src="" scrolling="no" allowfullscreen=""></iframe></div>
+        <div class="swiper-slide"><iframe class="embed-responsive-item w-100 h-100" src="https://hadescryptogod.github.io/portfolio/godofcheems" scrolling="no" allowfullscreen=""></iframe></div>
+        <div class="swiper-slide"><iframe class="embed-responsive-item w-100 h-100" src="https://hadescryptogod.github.io/portfolio/sonofdot" scrolling="no" allowfullscreen=""></iframe></div>
+      </div>
+      <div class="swiper-pagination"></div>
+	 <div class="title-wrapper d-flex flex-column" style="position:absolute;bottom:5%;left:5%;z-index:2;" data-aos="fade-right">
+       <div class="slide-title active"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/flynetwork" data-title-index="0">flynetwork<i class="arrow fi fi-rr-arrow-small-right"></i></a></div>
+        <div class="slide-title"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/godofcheems" data-title-index="1">godofcheems<i class="arrow fi fi-rr-arrow-small-right"></i></a></div>
+        <div class="slide-title"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/sonofdot" data-title-index="2">sonofdot<i class="arrow fi fi-rr-arrow-small-right"></i></a></div>
+    </div>    
+	    <div class="author-wrapper d-flex flex-column" style="position:absolute;top:5%;right:5%;z-index:3;" data-aos="fade-left"><a href="https://t.me/hadescryptogod" target="_blank">@hadescryptogod</a>
+    </div>
+    </div>
 	
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-<div class="container">
-<a class="navbar-brand" href="#">FLY<span style="font-weight:700;margin-left:2px;">NETWORK</span></a>
-<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-<div class="navbar-collapse collapse" id="navbarTogglerDemo02" style="">
-<ul class="navbar-nav ms-auto pt-2 pt-lg-0 d-flex justify-content-center align-items-center">
-<li class="nav-item"><a class="nav-link" href="#inventory">INVENTORY</a></li>
-<li class="nav-item"><a class="nav-link" href="#marketplace">MARKETPLACE</a></li><li class="nav-item"><a class="nav-link" href="#staking">STAKING</a></li><li class="nav-item"><a class="nav-link" href="uploads/whitepaper.pdf" target="_blank">WHITEPAPER</a></li>
-<li class="nav-item"><a class="nav-link" href="#wallet"><button class="btn" style="border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);font-size:1em;font-weight:500;">0xC2B3....0544</button></a></li>
-</ul>
-</div>
-</div>
-</nav>
-
-<div id="herocontainer" class="hero-container d-flex justify-content-center align-items-center" style="height: calc(100vh - 75px);" data-aos="fade-up">
-    
-    <div class="container">
-        <div class="row">
-<div class="col-12">
-    <div data-bs-ride="carousel" data-bs-touch="false" class="carousel slide carousel-fade mx-auto" id="carouselExampleControls">
-  <div class="carousel-inner">
-    <div class="carousel-item ratio ratio-1x1" data-bs-interval="10000">
-        
-<model-viewer interaction-prompt="none" environment-image="neutral" camera-controls="" src="assets/venus.glb" auto-rotate="" ar-status="not-presenting">
-</model-viewer>
-    </div>
-    <div class="carousel-item ratio ratio-1x1" data-bs-interval="10000">
-        
-<model-viewer auto-rotate="" src="assets/io.glb" camera-controls="" environment-image="neutral" interaction-prompt="none" ar-status="not-presenting">
-</model-viewer>
-    </div>
-    <div class="carousel-item ratio ratio-1x1 active" data-bs-interval="10000">
-       
-<model-viewer auto-rotate="" src="assets/ganymede.glb" camera-controls="" environment-image="neutral" interaction-prompt="none" ar-status="not-presenting">
-</model-viewer>
-    </div>
-  </div>
-  <button data-bs-slide="prev" data-bs-target="#carouselExampleControls" type="button" class="carousel-control-prev">
-    <div class="d-flex flex-column justify-content-center align-items-center" style="height:32px;width:32px;border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);"><span style="height:16px;width:16px;" class="carousel-control-prev-icon" aria-hidden="true"></span></div>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <div class="d-flex flex-column justify-content-center align-items-center" style="height:32px;width:32px;border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);"><span style="height:16px;width:16px;" class="carousel-control-next-icon" aria-hidden="true"></span></div>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    
-	<!--
-<div data-bs-ride="carousel" data-bs-touch="false" class="carousel slide carousel-fade mx-auto" id="carouselExampleControls">
-  <div class="carousel-inner" style="border-radius:16px;box-shadow: rgba(255, 255, 255, 0.1) 0px 2px 8px 0px;">
-    <div class="carousel-item ratio active" style="--bs-aspect-ratio: 66.7%;" data-bs-interval="5000">
-<video class="background-video" autoplay="" muted="" loop="">
-<source src="assets/nft-planet-1.mp4" type="video/mp4">
-</video></div>
-    <div class="carousel-item ratio" style="--bs-aspect-ratio: 66.7%;" data-bs-interval="5000">
-    <video class="background-video" autoplay="" muted="" loop="">
-<source src="assets/nft-planet-2.mp4" type="video/mp4">
-</video>  
-    </div>
-  </div>
-  <button data-bs-slide="prev" data-bs-target="#carouselExampleControls" type="button" class="carousel-control-prev">
-    <div class="d-flex flex-column justify-content-center align-items-center" style="height:32px;width:32px;border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);"><span style="height:16px;width:16px;" class="carousel-control-prev-icon" aria-hidden="true"></span></div>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <div class="d-flex flex-column justify-content-center align-items-center" style="height:32px;width:32px;border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);"><span style="height:16px;width:16px;" class="carousel-control-next-icon" aria-hidden="true"></span></div>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-	-->
-</div>
-</div>
-	<div class="row mt-5">
-<div class="col-12 d-flex justify-content-center align-items-center">
-<button id="mintbutton" class="btn" style="padding:12px 24px;border:1px solid rgba(255,255,255,1);border-radius:0px;color:#FFFFFF;background:rgba(255,255,255,0.10);font-size:1em;font-weight:500;letter-spacing:2px;">MINT PLANET NFT</button>
-</div>
-</div>
-    </div>
-
-</div>
-
-<div id="roadmap-container" class="roadmap-container" data-aos="fade-up">
-<div class="container py-5">
-    <h2 class="text-center mb-4" style="font-size:2.5em;font-weight:700;">ROADMAP</h2>
-<div class="row">
-<div class="col-12">
-
-
-<div class="row mb-1">
-<div class="col-12 col-lg-3 text-center py-3">
-<h4><b>Phase 1</b></h4>
-<ul class="list-unstyled text-small text-center mt-3">
-<li>Lorem ipsum dolor <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00C2A8" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
-<li>Consectetur adipiscing elit <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00C2A8" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
-<li>Sed do eiusmod <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00C2A8" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
-<li>Tempor incididunt ut <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00C2A8" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
-<li>labore et dolore <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00C2A8" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
-<li>Enim ad minim <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#00C2A8" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
-</ul>
-</div>
-<div class="col-12 col-lg-3 text-center py-3">
-<h4><b>Phase 2</b></h4>
-<ul class="list-unstyled text-small text-center mt-3">
-<li>Quis nostrud exercitation</li>
-<li>Ullamco laboris nisi</li>
-<li>Duis aute irure</li>
-<li>Dolor in reprehenderit</li>
-<li>Voluptate velit esse</li>
-<li>Cillum dolore eu</li>
-</ul>
-</div>
-<div class="col-12 col-lg-3 text-center py-3">
-<h4><b>Phase 3</b></h4>
-<ul class="list-unstyled text-small text-center mt-3">
-<li>Fugiat nulla pariatur</li>
-<li>Excepteur sint occaecat</li>
-<li>cupidatat non proident</li>
-<li>Sunt in culpa</li>
-<li>Qui officia deserunt</li>
-<li>Mollit anim id</li>
-</ul>
-</div>
-<div class="col-12 col-lg-3 text-center py-3">
-<h4><b>Phase 4</b></h4>
-<ul class="list-unstyled text-small text-center mt-3">
-<li>Sed ut perspiciatis</li>
-<li>Unde omnis iste</li>
-<li>Sit voluptatem accusantium</li>
-<li>Totam rem aperiam</li>
-<li>eaque ipsa quae</li>
-<li>Illo inventore veritatis</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-	
-<div id="under-development-container" class="under-development-container" data-aos="fade-up">
-<div class="container py-5">
-    <h2 class="text-center mb-4" style="font-size:2.5em;font-weight:700;">WEBSITE UNDER DEVELOPMENT</h2>
-
-</div>
-</div>
 
 <script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script><!-- Swiper JS -->
+	  <script>
+    $(document).ready(function() {
+         $(".slide-title-link").on('click', function(){
+		 if($(this).parent().hasClass("active")){
+        	window.open($(this).data("href"),"_blank");
+    		}
+		 //console.log($(this).data("title-index"));
+		 $(".slide-title-link").removeClass("active");
+		 swiper.slideTo($(this).data("title-index"));
+		
+   /* if($(this).parent().hasClass("active")){
+        window.open("http://www.someone.com/","_blank");
+    }
+    */
+});
+    });
+</script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 0,
+        mousewheel: true,
+	hashNavigation: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+	    
+	    swiper.on('slideChange', function () {
+	  var x = document.getElementsByClassName("slide-title");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    		x[i].classList.remove("active");
+           // x[i].querySelectorAll("a")[0].removeAttribute("href");
+	  if(i == swiper.activeIndex){
+		  x[i].classList.add("active");
+          // x[i].querySelectorAll("a")[0].href = x[i].querySelectorAll("a")[0].getAttribute("data-href");                
+      }
+  }
+});
+	
+	   
+	    
+    </script>
+	
 <script>
 AOS.init();
 AOS.init({
@@ -406,5 +445,7 @@ anchorPlacement: 'top-bottom', // defines which position of the element regardin
 });
 </script>
 
-</body></html>
 
+
+
+</div></body></html>
