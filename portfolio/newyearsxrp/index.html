@@ -427,6 +427,640 @@ max-width:1140px;
    /* if($(this).parent().hasClass("active")){
         window.open("http://www.someone.com/","_blank");
     }
+<html lang="en"><head>
+<title>My Portfolio | @hadescryptogod</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/uicons-regular-rounded.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"><script>
+$(document).ready(function(){
+  $("#mintbutton").click(function(){
+    $("#backgroundvideocontainer").animate({opacity:'0'},500);
+	  // $("#navbar").animate({opacity:'0'},500);
+	   $("#darkbackgroundoverlay").animate({opacity:'0'},500);
+    $("#herocontainer").animate({opacity:'0'},500);
+    $("#mintvideocontainer").animate({opacity:'1'},500,function(){
+     $('#mintvideo').trigger('play');   
+    });
+  });
+});
+</script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<style type="text/css">
+    
+	
+	
+	.author-wrapper a{ 
+		font-size:2em;
+		font-weight: 700;
+		letter-spacing: normal;
+		color: rgba(255,255,255,1) !important;
+	}
+	
+    .slide-title > a{
+         font-size:3em;
+        font-weight:700;
+        letter-spacing:normal;
+        color:rgba(255,255,255,1) !important;
+	display: flex;
+	flex-direction: row;
+	 align-items:center;
+	    opacity:0.5;
+	    -webkit-transition: all .2s cubic-bezier(.785,.135,.15,.86);
+	    -ms-transition: all .2s cubic-bezier(.785,.135,.15,.86);
+   	 transition: all .2s cubic-bezier(.785,.135,.15,.86);
+    }
+    
+	.slide-title > a > .arrow{
+         margin-left:0px;
+		display: inline-flex;
+		flex-direction: row;
+		align-items:center;
+		justify-content:center;
+		opacity:0;
+		-webkit-transition: all .1s cubic-bezier(.785,.135,.15,.86);
+    		-ms-transition: all .1s cubic-bezier(.785,.135,.15,.86);
+   		 transition: all .1s cubic-bezier(.785,.135,.15,.86);
+		
+    }
+	
+    .slide-title.active > a{
+         color:rgba(255,255,255,1) !important;
+	    font-size:3.25em;
+	    opacity:1;
+    }
+	
+	.slide-title.active > a > .arrow{
+        opacity:1;
+		
+    }
+    
+	
+    a{
+     text-decoration: none;
+    cursor: pointer;   
+        color:inherit;
+    }
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+	    position:fixed;
+	    top:0;
+	    left:0;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        background: transparent;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    /*
+    .swiper-slide::after{
+     position:absolute;
+z-index:1;
+height:100%;
+width:100%;
+background:rgba(0,0,0,0.6);
+        content:'';
+    }
+    */
+     
+    
+    .swiper-pagination-bullet{
+     background:transparent;
+        width:16px;
+        height:16px;
+        opacity:1;
+        border:1px solid #FFF75D;
+        box-shadow: 0 0 1.25px #fff,
+            0 0 2.5px #FFF75D,inset 0 0 1.25px #fff,
+            inset 0 0 2.5px #FFF75D; 
+}
+
+.swiper-pagination-bullet-active{
+    background:#FFF75D;
+}
+
+
+ 
+
+   .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+     right:24px;  
+    }
+    
+    .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {
+    bottom: 24px;
+    transform: none;
+}
+    
+model-viewer#reveal {
+    --poster-color: transparent;
+}
+
+    .mint-video-container{
+position:fixed;
+z-index:-2;
+height:100%;
+width:100%;
+        top:0;
+        left:0;
+}
+	
+.mint-video{
+z-index:-2;
+height:100%;
+width:100%;
+object-fit:cover;
+}
+    
+.background-video-container{
+position:fixed;
+z-index:-2;
+height:100%;
+width:100%;
+    top:0;
+    left:0;
+}
+	
+.background-video{
+z-index:-2;
+height:100%;
+width:100%;
+object-fit:cover;
+}
+    
+.dark-background-overlay{
+position:fixed;
+z-index:-1;
+height:100%;
+width:100%;
+background:rgba(0,0,0,0.25);
+}
+    
+    .carousel{
+     max-width:400px;
+        padding-bottom:48px;
+    }
+    
+     .carousel-control-prev{
+align-items:flex-end;
+         justify-content:flex-end;
+         width:50%;
+         padding-right:4px;
+	     z-index:0;
+}
+
+.carousel-control-next{
+align-items:flex-end;
+         justify-content:flex-start;
+    width:50%;
+    padding-left:4px;
+	z-index:0;
+}
+    
+    .roadmap-container ul > li {
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+    
+.navbar-brand{
+font-size:1.5em;
+font-weight:400;
+color:#FFFFFF !important;
+letter-spacing:3px;   
+}
+    
+body{
+color:#FFFFFF;
+font-family: 'Orbitron', 'Saira Condensed', sans-serif;
+font-weight:400;
+font-size:14px;
+}
+	
+*:focus{
+box-shadow:none !important;
+outline: 0 !important;
+}
+
+.container{
+
+padding-left: 16px;
+padding-right: 16px;
+}
+
+.navbar{
+padding:12px 0;
+    background:transparent;
+}
+	
+.nav-link{
+color:#FFFFFF !important;
+font-size:1em;
+letter-spacing:1.5px;
+}
+
+    .hero-container h1{
+font-size:2em;
+        font-weight:700;
+        animation: pulsate 2.5s infinite alternate; 
+}
+  
+    @keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 1px #fff,
+      0 0 3px #fff,
+      0 0 5px #fff,
+      0 0 10px #FF28FF,
+      0 0 20px #FF28FF,
+      0 0 22.5px #FF28FF,
+      0 0 25px #FF28FF
+  }
+  0% {
+    /* Smaller blur radius */
+    text-shadow:
+      0 0 1px #fff,
+      0 0 1.5px #fff,
+      0 0 2.5px #FF28FF,
+      0 0 11px #FF28FF,
+      0 0 15px #FF28FF,
+      0 0 17.5px #FF28FF
+  }
+}
+    
+.hero-container p{
+font-size:1em;
+}
+	
+.btn-primary{
+color: #FFF75D;
+background-color: transparent;
+border-color: #FFF75D;
+position: relative;
+z-index: 1;
+overflow: hidden;
+border: solid 1px #FFF75D;
+border-radius:16px;
+padding:16px 20px;
+font-weight:700;
+letter-spacing:0px;
+    box-shadow: 0 0 1.25px #fff,
+            0 0 2.5px #FFF75D,inset 0 0 1.25px #fff,
+            inset 0 0 2.5px #FFF75D; 
+}
+	
+.btn-primary:hover, .btn-primary:focus {
+background-color: #FFF75D !important;
+font-color:#FFFFFF !important;
+border: solid 1px #FFF75D !important;
+}
+
+
+@media (min-width: 576px){
+.hero-container p{
+font-size:1.25em;
+}
+}
+
+@media (min-width: 768px) {
+.hero-container h1{
+font-size:2.48em;
+}
+}
+
+@media (min-width: 992px) {
+    
+	.author-wrapper a{ 
+		font-size:3em;
+	}
+	
+	 .slide-title > a{
+         font-size:4.5em;
+    }
+    
+    .slide-title.active > a{
+	    font-size:5.25em;
+    }
+	
+    .carousel-control-prev{
+margin-left:-75px;
+        align-items:center;
+         justify-content:center;
+        width:15%;
+         padding-right:0px;
+	    z-index:0;
+}
+
+.carousel-control-next{
+margin-right:-75px;
+     align-items:center;
+         justify-content:center;
+    width:15%;
+    padding-left:0px;
+	z-index:0;
+}
+    
+    .carousel{padding-bottom:0px;
+    }
+    
+    h4{
+	font-size:1.5em;    
+	}
+	
+.hero-container p{
+font-size:1.5em;
+}
+
+.hero-container h1{
+ font-size:3.35em;
+}
+    
+.navbar-expand-lg .navbar-nav .nav-link {
+padding-right: 1.125rem;
+padding-left: 1.125rem;	
+}
+
+.navbar-expand-lg .navbar-nav .nav-item:last-child > .nav-link{
+padding-right: 0rem !important;
+}}
+
+@media (min-width: 1200px) {
+    .hero-container h1{
+ font-size:4em;
+}
+    }
+
+@media (min-width: 1400px) {
+.container{
+max-width:1140px;
+    }
+}
+</style>
+</head>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+    
+  <div id="herocontainer" class="hero-container d-flex justify-content-center align-items-center" style="height: calc(100vh);">
+ <div id="backgroundvideocontainer" class="background-video-container">
+<video class="background-video" autoplay="" muted="" loop="">
+<source src="assets/newyearsxrp-video-background.webm" type="video/webm">
+</video>
+</div>
+<div id="darkbackgroundoverlay" class="dark-background-overlay"></div>
+	 <!-- Swiper -->
+    <div class="d-none d-md-block swiper mySwiper swiper-initialized swiper-vertical swiper-pointer-events" style="background:transparent;">
+      <div class="swiper-wrapper" id="swiper-wrapper-f83844e6103f5937e" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(0px, -1620px, 0px);">
+        <div class="swiper-slide" role="group" aria-label="1 / 3" style="height: 810px;"><div class="container">
+<div class="row">
+<div class="col-12 d-flex flex-column justify-content-center align-items-center"><h1 class="mb-0">#XRP #NEWYEARSXRP</h1><p class="mt-4">The biggest $XRP reflection token on Binance Smart Chain. Simply hold $NYXRP tokens in your wallet and you'll earn $XRP.</p><div class="d-flex flex-column flex-sm-row mt-2 button-">
+<a type="button" class="btn btn-primary m-2" href="https://pancakeswap.finance/swap?outputCurrency=0x6a5d6bed5aa0d090c43ee470de764acc8c3ba50e" target="_blank">Buy On Pancakeswap</a>
+<a type="button" class="btn btn-primary m-2" href="https://t.me/SonOfDot" target="_blank">Join Our Telegram</a>
+</div>
+</div>
+</div>
+</div></div><div class="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 3" style="height: 810px;"><div class="about-container aos-init aos-animate" id="about">
+<div class="container py-5 aos-init" data-aos="fade-up">
+<div class="text-center"><h2 class="mt-4 mb-4 about-title">About</h2></div>
+<div class="row mb-5">
+<div class="col-12 text-center">
+<p>A new year a new beginning with the SEC suit against ripple about to drop, What better time to stack up on xrp. Start the new year of right.<br><br>Super hyped token, Rewards its holders for holding xrp. We will moon and we are gonna take you there sky is the limit. Enjoy amazing rewards wile we ride the xrp train.</p>
+</div>
+</div>
+<div class="text-center"><h2 class="features-title">Tokenomics</h2></div>
+<div class="row mt-4 mb-4">
+<div class="col-12 col-lg-4 mb-4">
+<div class="d-flex flex-column justify-content-center align-items-center px-3 py-5 mx-auto" style="border:1px solid #FFF75D;border-radius:2em;max-width:520px;box-shadow:0 0 1.25px #fff, 0 0 2.5px #fff75d, inset 0 0 1.25px #fff, inset 0 0 2.5px #fff75d;">
+<span class="text-center mb-2" style="font-size:1.5em;font-weight:700;">5% $XRP Reflections</span>
+<span class="text-center">5% of every transaction is taken and redistributed to all $NYXRP holders. Hold $NYXRP tokens, earn $XRP.</span>
+</div>
+</div>
+<div class="col-12 col-lg-4 mb-4">
+<div class="d-flex flex-column justify-content-center align-items-center px-3 py-5 h-100 mx-auto" style="border:1px solid #FFF75D;border-radius:2em;max-width:520px;box-shadow:0 0 1.25px #fff, 0 0 2.5px #fff75d, inset 0 0 1.25px #fff, inset 0 0 2.5px #fff75d;">
+<span class="text-center mb-2" style="font-size:1.5em;font-weight:700;">5% Liquidity Pool</span>
+<span class="text-center">5% of every transaction is transformed into liquidity. It's automatic and helps create a price floor.</span>
+</div>
+</div>
+<div class="col-12 col-lg-4 mb-4">
+<div class="d-flex flex-column justify-content-center align-items-center px-3 py-5 mx-auto" style="border:1px solid #FFF75D;border-radius:2em;max-width:520px;box-shadow:0 0 1.25px #fff, 0 0 2.5px #fff75d, inset 0 0 1.25px #fff, inset 0 0 2.5px #fff75d;">
+<span class="text-center mb-2" style="font-size:1.5em;font-weight:700;">5% Marketing Fee</span>
+<span class="text-center">5% of every transaction is taken and will be used for enhancements, operations, and marketing of the project.</span>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="3 / 3" style="height: 810px;"><div id="roadmap-container" class="roadmap-container aos-init" data-aos="fade-up">
+<div class="container py-5">
+    <h2 class="text-center mb-4" style="font-size:2.5em;font-weight:700;">ROADMAP</h2>
+<div class="row">
+<div class="col-12">
+
+
+<div class="row mb-1">
+<div class="col-12 col-lg-3 text-center py-3">
+<h4><b>Q1</b></h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Lorem ipsum dolor <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFF75D" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Consectetur <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFF75D" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Sed do eiusmod <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFF75D" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Tempor incididunt ut <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFF75D" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>labore et dolore <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFF75D" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Enim ad minim <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFF75D" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+</ul>
+</div>
+<div class="col-12 col-lg-3 text-center py-3">
+<h4><b>Q2</b></h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Quis nostrud exercitation</li>
+<li>Ullamco laboris nisi</li>
+<li>Duis aute irure</li>
+<li>Dolor in reprehenderit</li>
+<li>Voluptate velit esse</li>
+<li>Cillum dolore eu</li>
+</ul>
+</div>
+<div class="col-12 col-lg-3 text-center py-3">
+<h4><b>Q3</b></h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Fugiat nulla pariatur</li>
+<li>Excepteur sint occaecat</li>
+<li>cupidatat non proident</li>
+<li>Sunt in culpa</li>
+<li>Qui officia deserunt</li>
+<li>Mollit anim id</li>
+</ul>
+</div>
+<div class="col-12 col-lg-3 text-center py-3">
+<h4><b>Q4</b></h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Sed ut perspiciatis</li>
+<li>Unde omnis iste</li>
+<li>Sit voluptatem accusantium</li>
+<li>Totam rem aperiam</li>
+<li>eaque ipsa quae</li>
+<li>Illo inventore veritatis</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+        
+      </div>
+      <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-vertical"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span></div>
+	 <div class="d-none title-wrapper d-flex flex-column aos-init aos-animate" style="position:absolute;bottom:5%;left:5%;z-index:2;" data-aos="fade-right">
+       <div class="slide-title"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/flynetwork" data-title-index="0">flynetwork<i class="arrow fi fi-rr-arrow-small-right"></i></a></div>
+        <div class="slide-title"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/godofcheems" data-title-index="1">godofcheems<i class="arrow fi fi-rr-arrow-small-right"></i></a></div>
+        <div class="slide-title active"><a class="slide-title-link" data-href="https://hadescryptogod.github.io/portfolio/sonofdot" data-title-index="2">sonofdot<i class="arrow fi fi-rr-arrow-small-right"></i></a></div>
+    </div>    
+	    <div class="author-wrapper d-flex flex-column aos-init aos-animate d-none" style="position:absolute;top:16px;left:50%;z-index:3;transform: translate3d(-50%,0,0);" data-aos="fade-left"><span class="d-none" style="font-weight:700;position:absolute;top:-12px;left:50%;transform: translate3d(-50%,0,0);font-size:16px;font-family:'Saira Condensed';">NY</span><span class="d-none" style="font-weight:900;position:absolute;left:0;">20</span><svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 512 424"><defs><style>.cls-1{fill:#FFFFFF;}</style></defs><title>x</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M437,0h74L357,152.48c-55.77,55.19-146.19,55.19-202,0L.94,0H75L192,115.83a91.11,91.11,0,0,0,127.91,0Z"></path><path class="cls-1" d="M74.05,424H0L155,270.58c55.77-55.19,146.19-55.19,202,0L512,424H438L320,307.23a91.11,91.11,0,0,0-127.91,0Z"></path></g></g></svg> <span class="d-none" style="font-weight:500;position:absolute;bottom:-12px;left:50%;transform: translate3d(-50%,0,0);font-size:16px;font-family:'Saira Condensed';">XRP</span><span class="d-none" style="font-weight:900;position:absolute;right:0;">22</span>
+    </div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+<div class="mobile-container">
+<div class="container">
+<div class="row">
+<div class="col-12 d-flex flex-column justify-content-center align-items-center"><h1 class="mb-0">#XRP #NEWYEARSXRP</h1><p class="mt-4">The biggest $XRP reflection token on Binance Smart Chain. Simply hold $NYXRP tokens in your wallet and you'll earn $XRP.</p><div class="d-flex flex-column flex-sm-row mt-2 button-">
+<a type="button" class="btn btn-primary m-2" href="https://pancakeswap.finance/swap?outputCurrency=0x6a5d6bed5aa0d090c43ee470de764acc8c3ba50e" target="_blank">Buy On Pancakeswap</a>
+<a type="button" class="btn btn-primary m-2" href="https://t.me/SonOfDot" target="_blank">Join Our Telegram</a>
+</div>
+</div>
+</div>
+</div>
+    
+    <div class="container py-5 aos-init" data-aos="fade-up">
+<div class="text-center"><h2 class="mt-4 mb-4 about-title">About</h2></div>
+<div class="row mb-5">
+<div class="col-12 text-center">
+<p>A new year a new beginning with the SEC suit against ripple about to drop, What better time to stack up on xrp. Start the new year of right.<br><br>Super hyped token, Rewards its holders for holding xrp. We will moon and we are gonna take you there sky is the limit. Enjoy amazing rewards wile we ride the xrp train.</p>
+</div>
+</div>
+<div class="text-center"><h2 class="features-title">Tokenomics</h2></div>
+<div class="row mt-4 mb-4">
+<div class="col-12 col-lg-4 mb-4">
+<div class="d-flex flex-column justify-content-center align-items-center px-3 py-5 mx-auto" style="border:1px solid #FFF75D;border-radius:2em;max-width:520px;box-shadow:0 0 1.25px #fff, 0 0 2.5px #fff75d, inset 0 0 1.25px #fff, inset 0 0 2.5px #fff75d;">
+<span class="text-center mb-2" style="font-size:1.5em;font-weight:700;">5% $XRP Reflections</span>
+<span class="text-center">5% of every transaction is taken and redistributed to all $NYXRP holders. Hold $NYXRP tokens, earn $XRP.</span>
+</div>
+</div>
+<div class="col-12 col-lg-4 mb-4">
+<div class="d-flex flex-column justify-content-center align-items-center px-3 py-5 h-100 mx-auto" style="border:1px solid #FFF75D;border-radius:2em;max-width:520px;box-shadow:0 0 1.25px #fff, 0 0 2.5px #fff75d, inset 0 0 1.25px #fff, inset 0 0 2.5px #fff75d;">
+<span class="text-center mb-2" style="font-size:1.5em;font-weight:700;">5% Liquidity Pool</span>
+<span class="text-center">5% of every transaction is transformed into liquidity. It's automatic and helps create a price floor.</span>
+</div>
+</div>
+<div class="col-12 col-lg-4 mb-4">
+<div class="d-flex flex-column justify-content-center align-items-center px-3 py-5 mx-auto" style="border:1px solid #FFF75D;border-radius:2em;max-width:520px;box-shadow:0 0 1.25px #fff, 0 0 2.5px #fff75d, inset 0 0 1.25px #fff, inset 0 0 2.5px #fff75d;">
+<span class="text-center mb-2" style="font-size:1.5em;font-weight:700;">5% Marketing Fee</span>
+<span class="text-center">5% of every transaction is taken and will be used for enhancements, operations, and marketing of the project.</span>
+</div>
+</div>
+</div>
+</div>
+    
+    <div class="container py-5">
+    <h2 class="text-center mb-4" style="font-size:2.5em;font-weight:700;">ROADMAP</h2>
+<div class="row">
+<div class="col-12">
+
+
+<div class="row mb-1">
+<div class="col-12 col-lg-3 text-center py-3">
+<h4><b>Q1</b></h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Lorem ipsum dolor <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFF75D" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Consectetur <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFF75D" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Sed do eiusmod <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFF75D" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Tempor incididunt ut <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFF75D" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>labore et dolore <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFF75D" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Enim ad minim <svg class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFF75D" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+</ul>
+</div>
+<div class="col-12 col-lg-3 text-center py-3">
+<h4><b>Q2</b></h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Quis nostrud exercitation</li>
+<li>Ullamco laboris nisi</li>
+<li>Duis aute irure</li>
+<li>Dolor in reprehenderit</li>
+<li>Voluptate velit esse</li>
+<li>Cillum dolore eu</li>
+</ul>
+</div>
+<div class="col-12 col-lg-3 text-center py-3">
+<h4><b>Q3</b></h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Fugiat nulla pariatur</li>
+<li>Excepteur sint occaecat</li>
+<li>cupidatat non proident</li>
+<li>Sunt in culpa</li>
+<li>Qui officia deserunt</li>
+<li>Mollit anim id</li>
+</ul>
+</div>
+<div class="col-12 col-lg-3 text-center py-3">
+<h4><b>Q4</b></h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Sed ut perspiciatis</li>
+<li>Unde omnis iste</li>
+<li>Sit voluptatem accusantium</li>
+<li>Totam rem aperiam</li>
+<li>eaque ipsa quae</li>
+<li>Illo inventore veritatis</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+	
+
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script><!-- Swiper JS -->
+	  <script>
+    $(document).ready(function() {
+         $(".slide-title-link").on('click', function(){
+		 if($(this).parent().hasClass("active")){
+        	window.open($(this).data("href"),"_blank");
+    		}
+		 //console.log($(this).data("title-index"));
+		 $(".slide-title-link").removeClass("active");
+		 swiper.slideTo($(this).data("title-index"));
+		
+   /* if($(this).parent().hasClass("active")){
+        window.open("http://www.someone.com/","_blank");
+    }
     */
 });
     });
@@ -493,4 +1127,6 @@ anchorPlacement: 'top-bottom', // defines which position of the element regardin
 
 
 </div>
+
+
 </body></html>
