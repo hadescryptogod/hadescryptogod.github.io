@@ -15,9 +15,9 @@
 		 $(document).ready(function(){
 
   $(".nav-link").click(function(){
-    $(".nav-toggler").addClass("collapsed");
-	 $(".nav-toggler").attr("aria-expanded",false);
-	 $(".nav-toggler").removeClass("show");
+    $("#navToggler").addClass("collapsed");
+	 $("#navToggler").attr("aria-expanded",false);
+	 $("#navbarTogglerDemo02").removeClass("show");
   });
 		 });
 </script>
@@ -282,7 +282,7 @@ color:#000000 !important;
 <nav class="navbar navbar-expand-lg navbar-light" id="#home">
 <div class="container">
 <a class="navbar-brand" href="#">$SOD<span style="color:#e6007a;">.</span></a>
-<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<button id="navToggler" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" aria-current="page" href="#home">Home</a></li>
