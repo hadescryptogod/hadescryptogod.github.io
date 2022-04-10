@@ -32,7 +32,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>
+		 $(document).ready(function(){
+
+  $(".nav-link").click(function(){
+    $("#navToggler").addClass("collapsed");
+	 $("#navToggler").attr("aria-expanded",false);
+	 $("#navbarTogglerDemo02").removeClass("show");
+  });
+		 });
+</script>
 <style type="text/css">
 body{
 background:#000000;
@@ -323,6 +332,10 @@ top:25px;
 right:16px;
 }
 
+.navbar .collapsed{
+position:static !important;
+}
+
 .nav-link{
 padding:12px;
 color:#FFFFFF !important;
@@ -401,7 +414,7 @@ z-index:3;
 </section>
 
 <section class="section about-section">
-<div id="about" class="section-container about-container container py-5 aos-init aos-animate" data-aos="fade-up">
+<div id="about" class="section-container about-container container py-5 aos-init" data-aos="fade-up">
 <h2 class="section-title about-title mt-4 text-center">ABOUT</h2>
 <div class="row mt-4 mb-5">
 <div class="col-12 text-center">
@@ -412,7 +425,7 @@ z-index:3;
 </section>
 
 <section class="section tokenomics-section">
-<div id="tokenomics" class="section-container tokenomics-container container py-5 aos-init aos-animate" data-aos="fade-up">
+<div id="tokenomics" class="section-container tokenomics-container container py-5 aos-init" data-aos="fade-up">
 <h2 class="section-title tokenomics-title mt-4 text-center">TOKENOMICS</h2>
 <div class="row mt-4 mb-5">
 <div class="col-12 col-lg-3 mb-4">
@@ -445,7 +458,7 @@ z-index:3;
 
 
 <section class="section roadmap-section">
-<div id="roadmap" class="section-container roadmap-container container py-5 aos-init aos-animate" data-aos="fade-up">
+<div id="roadmap" class="section-container roadmap-container container py-5 aos-init" data-aos="fade-up">
 <div class="text-center">
 <h2 class="section-title roadmap-title mt-4">ROADMAP</h2>
 </div>
