@@ -1,15 +1,14 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <title>Home Page | Son Of Dot</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/uicons-regular-rounded.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 		 $(document).ready(function(){
@@ -218,7 +217,7 @@ letter-spacing:0px;
 .navbar-collapse{
 padding-top:76px !important;
 z-index:2 !important;
-background:#ffffff !important;
+background:#FFFFFF !important;
 position:fixed !important;
 top:0 !important;
 left:0 !important;
@@ -231,24 +230,35 @@ transition:none;
 .navbar-toggler {
 border:0;
 z-index:3;
-    padding:0;
+padding:0;
+position:fixed !important;
+top:25px;
+right:16px;
+}
+
+.navbar .collapsed{
+position:static !important;
+}
+
+.nav-link{
+padding:12px;
+color:#000000 !important;
+}
+
+    .nav-link:hover, .nav-link:focus{
+color:#E6007A !important;
 }
 
 .navbar-toggler-icon{
 background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='480' height='480'%0AviewBox='0 0 24 24'%0Astyle=' fill:%23000000;'%3E%3Cpath d='M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z'%3E%3C/path%3E%3C/svg%3E") !important;
-height:30px;
-width:30px;
+height:35px;
+width:35px;
 }
     
 .collapsed .navbar-toggler-icon{
 background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='480' height='480'%0AviewBox='0 0 24 24'%0Astyle=' fill:%23000000;'%3E%3Cpath d='M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z'%3E%3C/path%3E%3C/svg%3E") !important;
-    height:30px;
-    width:30px;
-}
-    
-.nav-link{
-padding:12px;
-color:#1e1e1e !important;
+    height:35px;
+    width:35px;
 }
 
 @media (min-width: 992px) {
@@ -270,20 +280,16 @@ border:0;
 z-index:3;
 }
 
-.nav-link{
-padding:12px;
-color:#000000 !important;
-}   
 }
 </style>
 </head>
-<body>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
 
 <nav class="navbar navbar-expand-lg navbar-light" id="#home">
 <div class="container">
 <a class="navbar-brand" href="#">$SOD<span style="color:#e6007a;">.</span></a>
 <button id="navToggler" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+<div class="navbar-collapse collapse" id="navbarTogglerDemo02" style="">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" aria-current="page" href="#home">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -294,10 +300,10 @@ color:#000000 !important;
 </div>
 </nav>
 
-<div class="container hero-container py-5 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up">
+<div class="container hero-container py-5 d-flex flex-column justify-content-center align-items-center aos-init aos-animate" data-aos="fade-up">
 <div class="row">
 <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-<img width="100%;" src="images/hero-image-2.svg"/>
+<img width="100%;" src="images/hero-image-2.svg">
 <p class="mt-5 mb-5 text-center">The biggest DOT reflection token and the first with manual-claim feature. Simply hold $SOD tokens in your wallet and you'll earn DOT.</p>
 <div class="d-flex flex-column flex-sm-row mt-2 button-">
 <a type="button" class="btn btn-primary m-2" href="https://pancakeswap.finance/swap?outputCurrency=0x6a5d6bed5aa0d090c43ee470de764acc8c3ba50e" target="_blank">Buy On Pancakeswap</a>
@@ -308,7 +314,7 @@ color:#000000 !important;
 </div>
 
 <div class="about-container" id="about">
-<div class="container py-5" data-aos="fade-up">
+<div class="container py-5 aos-init" data-aos="fade-up">
 <div class="text-center"><h2 class="mt-4 mb-4 about-title">About</h2></div>
 <div class="row mb-5">
 <div class="col-12 text-center">
@@ -340,75 +346,66 @@ color:#000000 !important;
 </div>
 
 <div class="roadmap-container" id="roadmap">
-<div class="container py-5" data-aos="fade-up">
+<div class="container py-5 aos-init" data-aos="fade-up">
 <div class="text-center"><h2 class="mt-4 mb-4 roadmap-title">Roadmap</h2></div>
 <div class="row mb-5">
-<div class="col-12 col-lg-3 text-center py-3">
-<h4>Q1</h4>
+<div class="col-12 col-lg-4 text-center py-3">
+<h4>Phase 1</h4>
 <ul class="list-unstyled text-small text-center mt-3">
-<li>Roadmap Q1:A</li>
-<li>Roadmap Q1:B</li>
-<li>Roadmap Q1:C</li>
-<li>Roadmap Q1:D</li>
-<li>Roadmap Q1:E</li>
-<li>Roadmap Q1:F</li>
+<li>Website v1 Launch</li>
+<li>Testnet Launch</li>
+<li>Token Sale</li>
+<li>Smart Contract Security Audit</li>
+<li>Mainnet Launch</li>
+<li>Marketing Campaign</li>
 </ul>
 </div>
-<div class="col-12 col-lg-3 text-center py-3">
-<h4>Q2</h4>
+<div class="col-12 col-lg-4 text-center py-3">
+<h4>Phase 2</h4>
 <ul class="list-unstyled text-small text-center mt-3">
-<li>Roadmap Q2:A</li>
-<li>Roadmap Q2:B</li>
-<li>Roadmap Q2:C</li>
-<li>Roadmap Q2:D</li>
-<li>Roadmap Q2:E</li>
-<li>Roadmap Q2:F</li>
+<li>Coinmarketcap and Coingecko Listing</li><li>SOD Merchandise Launch</li>
+<li>SODTracker Development</li>
+<li>SODSwap Development</li>
+<li>SODBridge Development</li>
+<li>SODWallet Development</li>
+
 </ul>
 </div>
-<div class="col-12 col-lg-3 text-center py-3">
-<h4>Q3</h4>
-<ul class="list-unstyled text-small text-center mt-3">
-<li>Roadmap Q3:A</li>
-<li>Roadmap Q3:B</li>
-<li>Roadmap Q3:C</li>
-<li>Roadmap Q3:D</li>
-<li>Roadmap Q3:E</li>
-<li>Roadmap Q3:F</li>
+<div class="col-12 col-lg-4 text-center py-3">
+<h4>Phase 3</h4>
+<ul class="list-unstyled text-small text-center mt-3"><li>Website V2 Launch</li>
+
+<li>SODTracker Launch</li>
+<li>SODSwap Launch</li>
+<li>SODBridge Launch</li>
+<li>SODWallet Launch</li>
+<li>Listing on CEX</li>
+
 </ul>
 </div>
-<div class="col-12 col-lg-3 text-center py-3">
-<h4>Q4</h4>
-<ul class="list-unstyled text-small text-center mt-3">
-<li>Roadmap Q4:A</li>
-<li>Roadmap Q4:B</li>
-<li>Roadmap Q4:C</li>
-<li>Roadmap Q4:D</li>
-<li>Roadmap Q4:E</li>
-<li>Roadmap Q4:F</li>
-</ul>
-</div>
+
 </div>
 </div>
 </div>
 
 <div class="dashboard-container" id="DApps">
-<div class="container py-5" data-aos="fade-up">
+<div class="container py-5 aos-init" data-aos="fade-up">
 <div class="text-center"><h2 class="mt-4 mb-5 dashboard-title">Decentralized Apps</h2></div>
 <div class="row">
 <div class="col-12 col-md-6 col-lg-6 mb-5">
 <div class="text-center"><h3 class="mb-3" style="font-weight:700;font-size:1.5em;font-weight:500;">$SOD<span style="color:#e6007a;">.</span>Tracker</h3></div>
 <p class="text-center mb-4" style="max-width:720px;">Keep track of how much $DOT you earned so far and when is the next payout from your dashboard.</p>
-<div class="d-flex flex-column justify-content-center align-items-center" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;border-radius: 12px;max-width:720px;position:relative;overflow:hidden !important;padding:0;border-radius:12px;"><img class="img-fluid dashboard-image" src="images/sod-manager-preview-3.png" /><div class="under-development-message d-none">Under Development</div></div>
+<div class="d-flex flex-column justify-content-center align-items-center" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;border-radius: 12px;max-width:720px;position:relative;overflow:hidden !important;padding:0;border-radius:12px;"><img class="img-fluid dashboard-image" src="images/sod-manager-preview-3.png"><div class="under-development-message d-none">Under Development</div></div>
 </div>
 <div class="col-12 col-md-6 col-lg-6 mb-5">
 <div class="text-center"><h3 class="mb-3" style="font-weight:700;font-size:1.5em;font-weight:500;">$SOD<span style="color:#e6007a;">.</span>Swap</h3></div>
 <p class="text-center mb-4" style="max-width:720px;">Securely swap your tokens without ever having to remove them from the safety of SODWallet.</p>
-<div class="d-flex flex-column justify-content-center align-items-center" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;border-radius: 12px;max-width:720px;position:relative;overflow:hidden !important;padding:0;border-radius:12px;"><img class="img-fluid dashboard-image" src="images/sod-swap-preview.png" /><div class="under-development-message d-none">Under Development</div></div>
+<div class="d-flex flex-column justify-content-center align-items-center" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;border-radius: 12px;max-width:720px;position:relative;overflow:hidden !important;padding:0;border-radius:12px;"><img class="img-fluid dashboard-image" src="images/sod-swap-preview.png"><div class="under-development-message d-none">Under Development</div></div>
 </div>
 <div class="col-12 col-md-6 col-lg-6 mb-5">
 <div class="text-center"><h3 class="mb-3" style="font-weight:700;font-size:1.5em;font-weight:500;">$SOD<span style="color:#e6007a;">.</span>Bridge</h3></div>
 <p class="text-center mb-4" style="max-width:720px;">Bridge, trade and transfer cryptocurrencies across blockchains at the block speed.</p>
-<div class="d-flex flex-column justify-content-center align-items-center" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;border-radius: 12px;max-width:720px;position:relative;overflow:hidden !important;padding:0;border-radius:12px;"><img class="img-fluid dashboard-image" src="images/sod-bridge-preview.png" /><div class="under-development-message d-none">Under Development</div></div>
+<div class="d-flex flex-column justify-content-center align-items-center" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;border-radius: 12px;max-width:720px;position:relative;overflow:hidden !important;padding:0;border-radius:12px;"><img class="img-fluid dashboard-image" src="images/sod-bridge-preview.png"><div class="under-development-message d-none">Under Development</div></div>
 </div>
 <div class="col-12 col-md-6 col-lg-6 mb-5">
 <div class="text-center"><h3 class="mb-3" style="font-weight:500;font-size:1.5em;">$SOD<span style="color:#e6007a;">.</span>Wallet</h3></div>
@@ -470,5 +467,6 @@ color:#000000 !important;
 });
 		</script>
 	
-</body>
-</html>
+
+
+</body></html>
