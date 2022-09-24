@@ -1,0 +1,1349 @@
+<!DOCTYPE HTML>
+<html lang="en" style="scroll-behavior: smooth;"><head>
+<title>Home Page | BuddhaCoin</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="BuddhaCoin is a hyper-deflationary, community-driven token deployed on the Binance Smart Chain through the BSC medium. It is community driven and backed by a strong team to deliver for investors with the goal of creating wealth and use case just by holding the token. To achieve this vision, a detailed roadmap is laid out and the liquidity is locked initially to grant investors confidence in this project.">
+<meta name="keywords" content="buddhacoin,bitcoin,dogecoin,doge,defi,coinbase,coinmarketcap,coinmarket,bscscan,whitebit,coingecko,cryptocurrency,crypto,pancakeswap,dex,etherium,eth,btc">
+<meta property="og:title" content="BuddhaCoin">
+<meta property="og:url" content="https://buddhacoin.online">
+<meta property="og:type" content="website">
+<meta property="og:description" content="BuddhaCoin is a hyper-deflationary, community-driven token deployed on the Binance Smart Chain through the BSC medium. It is community driven and backed by a strong team to deliver for investors with the goal of creating wealth and use case just by holding the token. To achieve this vision, a detailed roadmap is laid out and the liquidity is locked initially to grant investors confidence in this project.">
+<meta property="og:image" content="">
+<link rel="shortcut icon" type="image/png" href="/images/favicon.ico">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="840">
+<meta property="og:image:height" content="840">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="BuddhaCoin is a hyper-deflationary, community-driven token deployed on the Binance Smart Chain through the BSC medium. It is community driven and backed by a strong team to deliver for investors with the goal of creating wealth and use case just by holding the token. To achieve this vision, a detailed roadmap is laid out and the liquidity is locked initially to grant investors confidence in this project.">
+<meta name="twitter:title" content="BuddhaCoin">
+<meta name="twitter:site" content="@BhuddaCoin">
+<meta name="twitter:url" content="https://buddhacoin.online">
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link href="css/uicons-regular-rounded.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+	<script>
+	
+		 $(document).ready(function(){
+
+  $(".nav-link").click(function(){
+    $("#navToggler").addClass("collapsed");
+	 $("#navToggler").attr("aria-expanded",false);
+	 $("#navbarTogglerDemo02").removeClass("show");
+  });
+		 });
+</script>
+<style type="text/css">
+.background{
+position:fixed;
+    background:rgb(0,0,0);
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-2;
+opacity:1;
+}
+
+.overlay{
+    z-index:-1;
+    opacity:1;
+position:fixed;
+top:0;
+left:0;
+background-image: url("images/page-bg.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100%; /* You must set a specified height */
+    width:100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+body{
+	background-color:#FED8C5;
+color:#FC5600;
+font-family: 'Antonio', sans-serif;
+font-size:16px;
+font-weight: normal;
+font-style: normal;
+text-rendering: optimizeLegibility !important;
+-webkit-font-smoothing: antialiased !important;
+text-rendering: optimizeLegibility !important;
+-webkit-font-smoothing: antialiased !important;
+-moz-osx-font-smoothing: grayscale !important;
+    
+}
+	
+*:focus{
+box-shadow:none !important;
+outline: 0 !important;
+}
+    
+.container{
+max-width:1140px;
+padding-left: 16px;
+padding-right: 16px;
+}
+  
+
+/* HEADER */
+
+.navbar-brand{
+font-size:1.75em;
+font-weight:700;
+color:#000000 !important;
+letter-spacing:-0.04em;
+}
+
+.navbar{
+padding:12px 0;
+}
+	
+
+/* ---------------- */
+
+/* HERO CONTAINER */
+
+	/*
+.hero-container{
+    height: calc(100vh - 76px);
+    min-height: calc(1000px - 76px);
+}
+*/
+
+	
+.hero-container .hero-title{
+font-weight:700;
+font-size:4.5em;
+    position:relative;
+    color:#580B08;
+}
+
+    
+    .hero-container .hero-title div{
+display:inline;
+}
+    
+    
+.hero-container .hero-description{
+font-size:1.5em;
+text-align: center !important;
+    font-weight:700;
+}
+    
+    
+    .hero-container .hero-img-wrapper{
+position:relative;
+}
+    
+#hero-image-1{
+opacity:1;
+}
+
+  .hero-image {
+      filter: drop-shadow(0 0 20px rgb(252 255 255 / 100%));
+      opacity:0;
+       /* animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-name: bounce-2;
+        animation-timing-function: ease;
+      
+      */
+    }
+    @keyframes bounce-2 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-25px); }
+        100% { transform: translateY(0); }
+    }   
+
+
+.hero-container .buy-button{
+color:#FC5600;
+background:#FFFFFF;
+border: solid 2px #FC5600;
+position: relative;
+z-index: 1;
+overflow: hidden;
+border-radius: 1em;
+padding:16px 20px;
+font-weight:700;
+letter-spacing:0px;
+font-size:1.25em;
+}
+
+.hero-container .buy-button:hover, .hero-container .buy-button:focus{
+/* background: #2d9ee0;
+    color:#FFFFFF;*/
+}
+
+.hero-container .telegram-button{
+color:#FC5600;
+background:#FFFFFF;
+position: relative;
+z-index: 1;
+overflow: hidden;
+border: solid 2px #FC5600;
+border-radius:1em;
+padding:16px 20px;
+font-weight:700;
+letter-spacing:0px;
+font-size:1.25em;
+}
+
+.hero-container .telegram-button:hover, .hero-container .telegram-button:focus{
+/*background: #2d9ee0;
+    color:#FFFFFF;*/
+}
+    
+    
+/* ---------------- */
+
+/* SECTION CLASS */
+
+.section{
+}
+
+.section-container{
+    color:#FC5600;
+}
+
+.section-title{
+font-size:3.5em;
+font-weight:700;
+}
+
+/* ---------------- */
+
+/* ABOUT SECTION */
+
+.about-section{
+background:transparent;
+}
+
+.about-container{
+}
+
+.about-container .about-title{
+   color:#FC5600;
+    font-size:4.5em;font-weight:700;line-height:77px;
+}
+
+.about-container .about-description{
+font-size:1.5em;font-weight:700;line-height:36px;
+}
+
+/* ---------------- */
+
+/* FEATURES SECTION */
+
+.features-section{
+background:transparent;
+}
+
+.features-container{
+color:#FC5600;
+}
+
+.features-container .features-title{
+    color:#FC5600;
+    font-size:4.5em;font-weight:700;line-height:75px;
+}
+
+.features-container .features-title .text-1{
+    color:#FC5600;
+    font-size:0.9063em;font-weight:700;
+}
+
+.features-container .tokenomics-description{
+}
+
+.features-container .tax-card{
+ border:2px solid #FC5600;
+border-radius:1em;
+max-width:480px;
+background:#FFFFFF;
+}
+
+.features-container .tax-title{
+color: transparent;
+font-weight: 600;
+line-height: 0.85;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #C012D1;
+font-size:5em;
+font-weight:700;
+}
+    
+.features-container .tax-title-2{
+color: #FC5600;
+font-size: 2em;
+font-weight: 700;
+letter-spacing: 0;
+line-height: 1;
+}
+    
+.features-container .tax-description{
+font-size:1.25em;
+font-weight:500;
+    color: #FC5600;
+}
+
+/* ---------------- */
+
+/* TOKENOMICS SECTION */
+
+.tokenomics-section{
+    background:transparent;
+    position: relative;
+    background: url(images/darkblue-bg-pt.png);
+    background-repeat: repeat;
+}
+
+.tokenomics-container{
+color:#FC5600;
+}
+
+.tokenomics-container h3{
+font-size:2.5em;
+font-weight: 700;
+  color:#FC5600;
+font-family:'Poppins', sans-serif;
+}
+
+.tokenomics-container .tokenomics-title{
+    font-size:4.5em;font-weight:700;
+color:#580B08;
+}
+
+.tokenomics-container .tokenomics-description{
+}
+
+.tokenomics-container .tax-card{
+ border:2px solid #FC5600;
+border-radius:1em;
+max-width:480px;
+background:#FFFFFF;
+}
+
+.tokenomics-container .tax-title{
+color: #FC5600;
+font-weight: 600;
+line-height: 1.24;
+-webkit-text-stroke-width: 0px;
+-webkit-text-stroke-color: #F2BC1C;
+font-size:5em;
+font-weight:700;
+}
+    
+.tokenomics-container .tax-title-2{
+color: #FC5600;
+font-size: 2em;
+font-weight: 700;
+letter-spacing: 0;
+line-height: 1;
+}
+    
+.tokenomics-container .tax-description{
+font-size:1.25em;
+font-weight:500;
+    color:#FC5600;
+}
+
+
+.tokenomics-container .tokenomics-info-table td{
+	padding:16px 8px;
+	border:0px solid #ECF4FF;
+	color: #FC5600 !important;
+background:transparent !important;
+font-size:1.5em;
+}
+
+.tokenomics-container .tokenomics-info-table td span{
+	color: #FC5600 !important;
+    
+}
+
+.tokenomics-container .table{
+	overflow:hidden;
+	border-radius:1em;
+	border:0px solid #71DFE6 !important;
+	background:transparent;
+	font-size:1em;
+        color: #FC5600 !important;
+max-width:730px;
+}
+
+.tokenomics-container tbody{
+}
+
+.tokenomics-container .table-striped>tbody>tr:nth-of-type(odd) {
+	--bs-table-accent-bg: transparent !important;
+}
+
+
+/* ---------------- */
+
+/* ROADMAP SECTION */ 
+
+.roadmap-section{
+background:transparent;
+}
+
+.roadmap-section .roadmap-motorcycle{
+     position:absolute;
+top:20px;
+z-index:-1;
+    animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-name: bounce-2;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes bounce-2 {
+        0%   { left:100%; }
+        45%  { left:calc(50% - 75px); }
+        55%  { left:calc(50% - 65px); }
+        100%  { left:calc(0px - 140px); }
+    } 
+
+.roadmap-container{
+color:#FC5600;
+}
+
+.roadmap-container ul > li{
+margin-bottom:4px;
+margin-top:4px;
+    font-size:1.25em;
+    font-weight:500;
+}
+
+.roadmap-container .roadmap-title{
+    font-size:4.5em;font-weight:700;
+color:#580B08;
+}
+
+.roadmap-container h4{
+color:#580B08;
+font-size: 2em;
+    font-weight:700;
+}
+
+     
+    
+/* ---------------- */
+
+/* SWAP SECTION */
+
+.swap-section{
+    background:transparent;
+    position: relative;
+    background: url(images/darkblue-bg-pt.png);
+    background-repeat: repeat;
+}
+
+.swap-container{
+color:#FC5600;
+}
+
+.swap-container .swap-title{
+    font-size:4.5em;font-weight:700;
+color:#580B08;
+}
+
+
+/* ---------------- */
+
+    
+    /* FAQ SECTION */ 
+
+.faq-section{
+background:transparent;
+}
+	
+.faq-container{
+color:#FC5600;
+}
+
+.faq-container .faq-title{
+    font-size:4.5em;font-weight:700;
+color:#580B08;
+}
+
+.faq-container .accordion-item {
+    background-color: #FFFFFF;
+    border: 2px solid #FC5600;
+border-radius:1em !important;overflow:hidden;
+}   
+
+.faq-container .accordion-button{
+    color: #FC5600 !important;
+    background-color: #FFFFFF !important;
+    box-shadow: inset 0 -1px 0 rgb(252 86 0 / 13%);
+font-size:20px;
+}
+
+.faq-container .accordion-body{
+font-size:20px;
+}
+
+.faq-container .accordion-item{
+    margin-bottom:8px;
+}
+
+.faq-container .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FC5600'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+    
+.faq-container .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FC5600'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.faq-container .accordion-body{
+color:#FC5600;
+}
+    
+    .accordion-item:first-of-type {
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+
+.accordion-item:last-of-type {
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+}
+/* ---------------- */
+
+/* FOOTER SECTION */
+
+.footer-section{
+}
+
+.footer-container{
+color:#FC5600;
+font-size: 1.25em;
+    font-weight: 500;
+}
+
+.footer-container ul > li{
+display: inline-block;
+zoom:1;
+margin-left:12px;
+margin-right:12px;
+margin-bottom:24px;
+}
+
+.footer-container a{
+color:#580B08;
+font-size:1.25em;
+font-weight:700;
+}
+
+/* ---------------- */
+	
+@media (min-width: 576px){
+}
+
+@media (min-width: 768px){
+}
+
+@media (min-width: 992px){
+    
+    .roadmap-section .roadmap-motorcycle{
+     animation-duration: 10s;
+    }
+
+.faq-container .faq-title{
+    font-size:6em;
+}
+
+.swap-container .swap-title{
+    font-size:6em;
+}
+
+    .roadmap-container .roadmap-title{
+   font-size:6em;
+}
+    
+    .tokenomics-container .tokenomics-title{
+    font-size:6em;
+}
+
+    
+.features-container .features-title{
+    color:#FC5600;
+    font-size:6em;font-weight:700;line-height:93px;
+}
+
+.features-container .features-title .text-1{
+    color:#FC5600;
+    font-size:0.9063em;font-weight:700;
+}
+
+.about-container .about-title{
+   color:#FC5600;
+    font-size:6em;font-weight:700;line-height:98px;
+}
+
+.about-container .about-description{
+font-size: 1.5em;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+	/*
+	.hero-container{
+    height: calc(100vh - 76px);
+		min-height: calc(720px - 76px);
+}
+*/
+	
+.hero-container .hero-description{
+font-size:1.5em;
+}
+
+.hero-container .hero-title{
+font-size:6em;
+    font-weight:700;
+}
+    
+.navbar-expand-lg .navbar-nav .nav-link {
+padding-right: 1.125rem;
+padding-left: 1.125rem;	
+}
+
+.navbar-expand-lg .navbar-nav .nav-item:last-child > .nav-link{
+padding-right: 0rem !important;
+}
+}
+
+@media (min-width: 1200px){
+}
+
+@media (min-width: 1400px){
+}
+	
+	
+.navbar-collapse{
+padding-top:76px !important;
+z-index:2 !important;
+background:#FC5600 !important;
+position:fixed !important;
+top:0 !important;
+left:0 !important;
+width:100vw !important;
+height:100vh !important;
+text-align:center !important;
+transition:none;
+}
+    
+.navbar-toggler {
+border:0;
+z-index:3;
+padding:0;
+position:fixed !important;
+top:19px;
+right:16px;
+}
+
+.navbar .collapsed{
+position:static !important;
+}
+
+.nav-link{
+padding:16px;
+color:#FFFFFF !important;
+    text-transform:capitalize;
+    font-size:2.5em;
+    font-weight:700;
+}
+
+    .nav-link:hover{
+color:#580B08 !important;   
+	}
+
+.navbar-toggler-icon{
+background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='480' height='480'%0AviewBox='0 0 24 24'%0Astyle=' fill:%23FFFFFF;'%3E%3Cpath d='M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z'%3E%3C/path%3E%3C/svg%3E") !important;
+height:35px;
+width:35px;
+}
+    
+.collapsed .navbar-toggler-icon{
+background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='480' height='480'%0AviewBox='0 0 24 24'%0Astyle=' fill:%23FC5600;'%3E%3Cpath d='M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z'%3E%3C/path%3E%3C/svg%3E") !important;
+    height:35px;
+    width:35px;
+}
+
+@media (min-width: 992px) {
+
+.navbar-collapse{
+padding-top:0 !important;
+z-index:2 !important;
+background:transparent !important;
+position:static !important;
+top:0 !important;
+left:0 !important;
+width:auto !important;
+height:auto !important;
+text-align:center !important;
+}
+
+    .nav-link{
+color:#FC5600 !important;
+padding:12px;
+    text-transform:capitalize;
+    font-size:1.5em;
+    font-weight:700;
+}
+    
+     .nav-link:hover{
+color:#580B08 !important;   
+	}
+	
+.navbar-toggler {
+border:0;
+z-index:3;
+}
+
+}
+    
+     /* LIVE BACKGROUND */
+    
+    .background-video-container {
+        margin-top:-84px;
+    position: absolute;
+    z-index: -2;
+    height: calc(100% + 84px);
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+    
+    .dark-background-overlay {
+        margin-top:-84px;
+    position: absolute;
+    z-index: -1;
+    height: calc(100% + 84px);
+    width: 100%;
+    background: rgba(0,0,0,0.25);
+    top: 0;
+    left: 0;
+}
+    
+    .background-video {
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+    </style>
+<style></style></head>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark" id="#home">
+<div class="container" data-aos="fade">
+<a class="navbar-brand d-flex flex-row justify-content-center align-items-center" href="/">
+    <img class="img-fluid me-2" src="images/image-13.png" style="max-height:40px;">
+<h1 class="mb-0" style="font-size:0.875em;font-weight:700;color:#FC5600">$BUDDHA</h1></a>
+<button id="navToggler" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<div class="navbar-collapse collapse" id="navbarTogglerDemo02" style="">
+<ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+<li class="nav-item"><a class="nav-link" aria-current="page" href="#home">HOME</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+<li class="nav-item"><a class="nav-link" href="#tokenomics">TOKENOMICS</a></li>
+<li class="nav-item"><a class="nav-link" href="#roadmap">ROADMAP</a></li>
+<li class="nav-item"><a class="nav-link" href="#swap">SWAP</a></li>
+<li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+
+
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+<main>
+    <div class="background d-none"><div class="overlay" style=""></div></div>
+
+    
+<section class="hero-section" style="position:relative;">
+    
+
+  
+<div class="hero-container container py-5 d-flex flex-column justify-content-center align-items-center">
+<div class="row w-100">
+
+<div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+
+<h1 class="hero-title text-center mb-3"><div data-aos="fade-up" data-aos-duration="1000" class="aos-init">B</div><div data-aos="fade-up" data-aos-duration="1100" class="aos-init">U</div><div data-aos="fade-up" data-aos-duration="1200" class="aos-init">D</div><div data-aos="fade-up" data-aos-duration="1300" class="aos-init">D</div><div data-aos="fade-up" data-aos-duration="1400" class="aos-init">H</div><div data-aos="fade-up" data-aos-duration="1500" class="aos-init">A</div><div data-aos="fade-up" data-aos-duration="1600" class="aos-init">C</div><div data-aos="fade-up" data-aos-duration="1700" class="aos-init">O</div><div data-aos="fade-up" data-aos-duration="1800" class="aos-init">I</div><div data-aos="fade-up" data-aos-duration="1900" class="aos-init">N</div> </h1>
+
+<p class="hero-description" data-aos="fade">BuddhaCoin is a utility-based, charity token that is dedicated to making the world a better place.</p>
+
+<p class="d-none" style="font-size:2em;">Price of Buddha in USD: <span id="priceText">0.00000000000005108171</span></p>
+
+
+<div class="d-flex flex-column flex-sm-row mt-2" data-aos="fade">
+<a type="button" class="buy-button btn btn-primary m-2 " href="h#" target="_blank">BUY ON PANCAKESWAP</a>
+<a type="button" class="telegram-button btn btn-primary m-2" href="#" target="_blank">JOIN OUR TELEGRAM</a>
+</div>
+</div><div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center py-5" style="position:relative;">
+
+<div class="hero-img-wrapper w-100 px-lg-5" data-aos="fade"><div class="ratio ratio-1x1">
+  <img id="hero-image-1" class="hero-img hero-image " src="images/image-1.png" style="opacity: 0;">
+  <img id="hero-image-2" class="hero-img hero-image" src="images/image-4.png" style="opacity: 0;">
+  <img id="hero-image-3" class="hero-img hero-image" src="images/image-5.png" style="opacity: 1;">
+<img id="hero-image-4" class="hero-img hero-image" src="images/image-6.png" style="opacity: 0;">
+<img id="hero-image-5" class="hero-img hero-image" src="images/image-7.png" style="opacity: 0;">
+</div>
+
+</div>
+
+
+
+
+</div>
+</div>
+</div>
+</section>
+
+<section id="about" class="py-5 section about-section" style="position:relative;">
+    
+<div class="section-container about-container container py-5" style="">
+
+
+<div class="row"><div class="mb-5 mb-lg-0 col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+<h2 class="w-100 section-title about-title text-start text-lg-center" data-aos="fade">WHAT IS<br><span style="color:#580B08;">BUDDHACOIN</span></h2>
+    
+</div>
+
+<div class="col-12 col-lg-6">
+<p class="text-start text-lg-center section-description about-description" style="" data-aos="fade">BuddhaCoin is a utility-based, charity token deployed
+on the Binance Smart Chain through the BSC Medium. BuddhaCoin's 
+vision is to develop an sustainable ecosystem from a series of 
+utilities, who's sole goal is to make the world a better place.
+BuddhaCoin's ecosystem will also generate revenue to be distributed
+to charities in a unique fashion.</p>
+    
+</div>
+</div>
+</div>
+</section>
+<section id="features" class="section features-section py-5" style="position:relative;">
+<div class="section-container features-container container py-5">
+<p class="mb-5 pb-4 section-title features-title text-center" data-aos="fade" style=""><span class="text-1">WHY INVEST IN</span><br><span class="text-2" style="color:#580B08;">BUDDHACOIN</span></p><div class="row">
+
+
+
+
+<div class="col-12 col-lg-4 mb-4">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade" style="">
+<img class="img-fluid mb-3 invisible" src="images/lp-lock-2.png" style="max-height:100px;">
+<span class="tax-title-2 text-center mb-3">SUSTAINABLE ECOSYSTEM</span><span class="tax-description text-center ">BuddhaCoin's utilities will create a sustainable ecosystem that survive no matter the market conditions.</span>
+</div>
+</div>
+<div class="col-12 col-lg-4 mb-4">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade" style="">
+<img class="img-fluid mb-3" src="images/team-2.png" style="max-height:100px;">
+<span class="tax-title-2 text-center mb-3">EXPERIENCED TEAM</span><span class="tax-description text-center">This project is handled by experienced developers and marketers on crypto world.</span>
+</div>
+</div><div class="col-12 col-lg-4 mb-4">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade" style="">
+<img class="p-1 img-fluid mb-3 invisible" src="images/anti-whale-2.png" style="max-height:100px;">
+<span class="tax-title-2 text-center mb-3">Viral Potential</span><span class="tax-description text-center">Due to the unique charity design, it could only take one celebrity
+retweet to make BuddhaCoin go viral. </span>
+</div>
+</div>
+
+    
+
+
+
+
+</div>
+
+</div>
+    
+</section>
+
+<section id="tokenomics" class="py-5 section tokenomics-section" style="position:relative;">
+    
+<div class="section-container tokenomics-container container py-5">
+<h2 class="mb-5 pb-4 section-title tokenomics-title text-center" data-aos="fade">TOKENOMICS</h2>
+<div class="row mb-5">
+<div class="col-12">
+                       <table class="table table-striped tokenomics-info-table mx-auto" data-aos="fade">
+					<tbody><tr>
+						<td style="font-weight:700;color:#580B08 !important">Token Name</td>
+						<td style="font-weight:700;text-align: right;">BuddhaCoin</td>
+					</tr>
+					<tr>
+						<td style="font-weight:700;color:#580B08 !important">Token Ticker</td>
+						<td style="font-weight:700;white-space:nowrap;text-align: right;">$BUDDHA</td>
+					</tr><tr>
+						<td style="font-weight:700;color:#580B08 !important">Token Network</td>
+						<td style="font-weight:700;white-space:nowrap;text-align: right;">BSC</td>
+					</tr>
+
+					<tr>
+						<td style="font-weight:700;color:#580B08 !important">Total Supply</td>
+						<td style="font-weight:700;text-align: right;">1B $BUDDHA</td>
+					</tr>
+					
+				</tbody></table>
+                    </div>
+</div>
+<div class="row">
+
+
+
+
+
+
+<div class="col-12 col-lg-4 mb-4 ms-auto">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade" style="">
+<span class="tax-title text-center mb-3">4%</span>
+<span class="tax-title-2 text-center mb-3">CHARITY</span><span class="tax-description text-center">4% of every transaction will be donated to a celebrity chosen charity.</span>
+</div>
+    
+</div><div class="col-12 col-lg-4 mb-4 me-auto">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade" style="">
+<span class="tax-title text-center mb-3">3%</span>
+<span class="tax-title-2 text-center mb-3">GROWTH</span><span class="tax-description text-center">3% of every transaction will grow the coin through utility development, 
+token buy-backs and marketing.</span>
+</div>
+</div>
+    
+</div>
+<div class="row">
+<div class="col-12 col-lg-4 mb-4 ms-auto">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade" style="">
+<span class="tax-title text-center mb-3">2%</span>
+<span class="tax-title-2 text-center mb-3">LIQUIDITY POOL</span><span class="tax-description text-center">2% of every transaction is transformed into liquidity. It's automatic and helps create a price floor.</span>
+</div>
+</div><div class="col-12 col-lg-4 mb-4 me-auto">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade" style="">
+<span class="tax-title text-center mb-3">1%</span>
+<span class="tax-title-2 text-center mb-3">TEAM</span><span class="tax-description text-center">1% of every tranacation will go to the team, keeping them motivated to grow BuddhaCoin.</span>
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+</section>
+
+<section id="roadmap" class="py-5 section roadmap-section" style="position:relative;overflow-x:hidden;">
+    <img class="img-fluid roadmap-motorcycle" src="images/image-12.png" width="140px" data-aos="fade">
+<div class="section-container roadmap-container container py-5">
+    
+<div class="text-center">
+<h2 class="mt-5 mb-5 pb-4 section-title roadmap-title" data-aos="fade">ROADMAP</h2>
+<div class="row mb-3">
+    <div class="col-12 col-lg-6 text-center text-lg-end py-3">
+<img class="img-fluid" src="images/image-11.png" width="280px" data-aos="fade">
+</div>
+<div class="col-12 col-lg-6 text-center text-lg-start py-3 d-flex flex-column justify-content-center ">
+<h4 data-aos="fade" class="aos-init">PHASE 1</h4>
+<ul class="list-unstyled text-small text-center text-lg-start mt-3" data-aos="fade">
+<li>Telegram and Twitter Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#580B08" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Website V1 Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#580B08" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Utility #1 Launch: BuddhaBuyContestBot<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#580B08" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Build BuddhaCoin Community</li>
+<li>Pancakeswap Fair Launch</li>
+</ul>
+</div>
+</div>
+<div class="row mb-3">
+<div class="col-12 col-lg-6 order-2 order-lg-1 text-center text-lg-end py-3 d-flex flex-column justify-content-center ">
+<h4 data-aos="fade" class="aos-init">PHASE 2</h4>
+<ul class="list-unstyled text-small text-center text-lg-end mt-3" data-aos="fade">
+<li>Initial Marketing Campaign</li>
+<li>Coin Listing Sites &amp; Banner Ads</li>
+<li>Utility #2 Revealed &amp; Developed</li>
+<li>WhitePaper and Website V2 Published</li>
+<li>CG &amp; CMC Listings</li>
+</ul>
+</div>
+
+<div class="col-12 col-lg-6  order-1 order-lg-2 text-center py-3 text-center text-lg-start">
+<img class="img-fluid" src="images/image-9.png" width="280px" data-aos="fade">
+
+</div>
+</div>
+
+<div class="row mb-3">
+    <div class="col-12 col-lg-6 text-center text-lg-end py-3">
+<img class="img-fluid" src="images/image-10.png" width="280px" data-aos="fade">
+</div>
+
+<div class="col-12 col-lg-6 text-center text-lg-start py-3 d-flex flex-column justify-content-center ">
+<h4 data-aos="fade" class="aos-init">PHASE 3</h4>
+<ul class="list-unstyled text-small text-center text-lg-start mt-3" data-aos="fade">
+<li>Staking Platform Launch</li>
+<li>Stakable NFT's Launched</li>
+<li>Utility #3 Revealed and Developed</li>
+<li>Merchandise Launch</li>
+<li>Massive Marketing including Celebrities</li>
+</ul>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</section><section id="swap" class="py-5 section swap-section" style="position:relative;">
+    
+<div class="section-container swap-container container py-5">
+<h2 class="mb-5 pb-4 section-title swap-title text-center" data-aos="fade"><span style="color:#FC5600">BUY</span> $BUDDHA</h2>
+
+<div class="row">
+<div class="col-12 col-lg-7 mb-5 mb-lg-0 text-center text-lg-start">
+					
+
+<div class="card py-4" style="border-radius:12px;color:#FFFFFF;background:transparent;border:0;">
+						<div class="card-body p-0" data-aos="fade">
+							<div class="d-flex">
+								<div class="d-none text-center" style="max-width:580px;border-right:solid 1px #FFFFFF0A;width:100px">
+									<p class="mb-0" style="color:#580B08">Step</p>
+									<span class="mb-0" style="color: #580B08;font-size: 4em;font-weight: 600;line-height: 1;">1</span>
+								</div>
+								<div class="flex-fill w-100">
+									<h3 class="mb-3" style="font-size:2em;color:#580B08;font-weight:1.5em;font-weight:700;text-transform: uppercase;">Download &amp; setup MetaMask or TrustWallet</h3>
+									<p class="mb-0" style="color:#FC5600;font-weight:500;font-size:1.25em;">Download <a href="https://metamask.io/" style="color:#580B08">MetaMask</a> (a crypto wallet in form of a browser extension) or <a href="https://trustwallet.com/" style="color:#580B08">TrustWallet</a> (an app for your phone). After that you will have to add the Binance Smart Chain to your network-list. (<a href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain" style="color:#580B08">Click here for a step-by-step tutorial</a>)</p>
+                						</div>
+              						</div>
+          					</div>
+					</div><div class="card py-4" style="border-radius:12px;color:#FFFFFF;background:transparent;border:0;">
+						<div class="card-body p-0" data-aos="fade">
+							<div class="d-flex">
+								<div class="d-none text-center" style="border-right:solid 1px #FFFFFF0A;width:100px">
+									<p class="mb-0" style="color:#580B08">Step</p>
+									<span class="mb-0" style="color: #580B08;font-size: 4em;font-weight: 600;line-height: 1;">1</span>
+								</div>
+								<div class="flex-fill w-100">
+									<h3 class="mb-3" style="font-size:2em;color:#580B08;font-weight:1.5em;font-weight:700;text-transform: uppercase;">Buy and send BNB to MetaMask</h3>
+									<p class="mb-0" style="color:#FC5600;font-weight:500;font-size:1.25em;">Buy BNB on an exchange (i.e. Binance, Kraken, Coinbase etc.). Transfer the tokens to your MetaMask wallet address. <strong style="color:#580B08">BEP-20 addresses start with a "0x"</strong></p>
+                						</div>
+              						</div>
+          					</div>
+					</div>
+
+
+
+<div class="card py-4" style="border-radius:12px;color:#FFFFFF;background:transparent;border:0;">
+						<div class="card-body p-0" data-aos="fade">
+							<div class="d-flex">
+								<div class="d-none text-center" style="border-right:solid 1px #FFFFFF0A;width:100px">
+									<p class="mb-0" style="color:#580B08">Step</p>
+									<span class="mb-0" style="color: #580B08;font-size: 4em;font-weight: 600;line-height: 1;">1</span>
+								</div>
+								<div class="flex-fill w-100">
+									<h3 class="mb-3" style="font-size:2em;color:#580B08;font-weight:1.5em;font-weight:700;text-transform: uppercase;">Head on to PancakeSwap and swap for $BUDDHA</h3>
+									<p class="mb-0" style="color:#FC5600;font-weight:500;font-size:1.25em;"><a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=" target="_blank" style="color:#580B08">Click here</a> to head on over to PancakeSwap or use this address <strong style="color:#580B08">0x0000....0000 </strong>to select $BUDDHA. Set the slippage tolerance to 12% (sometimes it may be a bit more, depending on how much demand there is)</p>
+                						</div>
+              						</div>
+          					</div>
+					</div><div class="card py-4" style="border-radius:12px;color:#FFFFFF;background:transparent;border:0;">
+						<div class="card-body p-0" data-aos="fade">
+							<div class="d-flex">
+								<div class="d-none text-center" style="border-right:solid 1px #FFFFFF0A;width:100px">
+									<p class="mb-0" style="color:#580B08">Step</p>
+									<span class="mb-0" style="color: #580B08;font-size: 4em;font-weight: 600;line-height: 1;">1</span>
+								</div>
+								<div class="flex-fill w-100">
+									<h3 class="mb-3" style="font-size:2em;color:#580B08;font-weight:1.5em;font-weight:700;text-transform: uppercase;">View $BUDDHA and HODL</h3>
+									<p class="mb-0" style="color:#FC5600;font-weight:500;font-size:1.25em;">Swap BNB for BUDDHA. Now you need to add BUDDHA to your MetaMask (<a href="https://docs.yearn.finance/how-to-guides/how-to-add-a-custom-token-to-metamask" style="color:#580B08">Tutorial here</a>) or Trust Wallet to view your $BUDDHA. Lastly HODL!</p>
+                						</div>
+              						</div>
+          					</div>
+					</div>
+					
+					
+
+
+                                        
+				</div>
+    <div class="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-center">
+
+<iframe class="d-block mx-auto" src="https://poocoin.app/embed-swap?outputCurrency=" height="480" style="border-radius:1em;max-width:400px;width:100%;" data-aos="fade"></iframe></div>
+
+
+	
+	
+
+
+</div>
+</div>
+</section>
+
+<section id="faq" class="py-5 section faq-section" style="position:relative;">
+    
+<div class="py-5 section-container faq-container container py-5">
+<h2 class="mb-5 pb-4 section-title faq-title text-center" data-aos="fade">FAQ</h2>
+
+<div class="row">
+
+<div class="col-12" data-aos="fade">
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">What is BuddhaCoin?</button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" style="">
+      <div class="accordion-body">BuddhaCoin is a hyper-deflationary, community-driven token deployed on the Binance Smart Chain through the BSC medium. It is community driven and backed by a strong team to deliver for investors with the goal of creating wealth and use case just by holding the token. To achieve this vision, a detailed roadmap is laid out and the liquidity is locked initially to grant investors confidence in this project.
+</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">When was BuddhaCoin fairlaunched?</button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo" style="">
+      <div class="accordion-body">
+To be announced.</div>
+    </div>
+  </div>
+  
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">How long is the liquidity locked?</button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree" style="">
+      <div class="accordion-body">
+To be announced.</div>
+    </div>
+  </div><div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">What are the transaction fees?</button>
+    </h2>
+    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour" style="">
+      <div class="accordion-body">
+To be announced.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+	
+	
+
+
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+</main>
+
+<footer class="footer-section" style="position:relative;">
+    <div class="g-border-bottom">
+				<div class="g-border-bottom__left"></div>
+				<div class="g-border-bottom__center"></div>
+				<div class="g-border-bottom__right"></div>
+			</div>
+<div class="footer-container container py-5">
+<div class="row">
+<div class="col-12 d-flex flex-column justify-content-center align-items-center">
+<ul class="list-unstyled text-small text-center">
+<li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">CRO Telegram</a></li>
+<li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">DEXScreener</a></li>
+<li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">MM.Finance</a></li>
+<li><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">TELEGRAM</a></li>
+<li class=""><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">DISCORD</a></li>
+<li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">Reddit</a></li>
+<li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">INSTAGRAM</a></li>
+<li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">FACEBOOK</a></li>
+<li class=""><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">TWITTER</a></li>
+<li><a class="text-decoration-none" href="https://poocoin.app/tokens/" target="_blank" rel="nofollow">POOCOIN</a></li>
+<li><a class="text-decoration-none" href="" target="_blank" rel="nofollow">PANCAKESWAP</a></li>
+</ul>
+</div>
+</div>
+<div class="row mt-4">
+<div class="col"><p class="text-center m-0">Copyright © 2022 | All Rights Reserved</p></div>
+</div>
+</div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+		AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 0, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
+
+	
+	<script>
+		var PCS_ABI = [{"inputs":[{"internalType":"address","name":"_factory","type":"address"},{"internalType":"address","name":"_WETH","type":"address"}],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[],"name":"WETH","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"tokenA","type":"address"},{"internalType":"address","name":"tokenB","type":"address"},{"internalType":"uint256","name":"amountADesired","type":"uint256"},{"internalType":"uint256","name":"amountBDesired","type":"uint256"},{"internalType":"uint256","name":"amountAMin","type":"uint256"},{"internalType":"uint256","name":"amountBMin","type":"uint256"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"addLiquidity","outputs":[{"internalType":"uint256","name":"amountA","type":"uint256"},{"internalType":"uint256","name":"amountB","type":"uint256"},{"internalType":"uint256","name":"liquidity","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"token","type":"address"},{"internalType":"uint256","name":"amountTokenDesired","type":"uint256"},{"internalType":"uint256","name":"amountTokenMin","type":"uint256"},{"internalType":"uint256","name":"amountETHMin","type":"uint256"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"addLiquidityETH","outputs":[{"internalType":"uint256","name":"amountToken","type":"uint256"},{"internalType":"uint256","name":"amountETH","type":"uint256"},{"internalType":"uint256","name":"liquidity","type":"uint256"}],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"factory","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountOut","type":"uint256"},{"internalType":"uint256","name":"reserveIn","type":"uint256"},{"internalType":"uint256","name":"reserveOut","type":"uint256"}],"name":"getAmountIn","outputs":[{"internalType":"uint256","name":"amountIn","type":"uint256"}],"stateMutability":"pure","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountIn","type":"uint256"},{"internalType":"uint256","name":"reserveIn","type":"uint256"},{"internalType":"uint256","name":"reserveOut","type":"uint256"}],"name":"getAmountOut","outputs":[{"internalType":"uint256","name":"amountOut","type":"uint256"}],"stateMutability":"pure","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountOut","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"}],"name":"getAmountsIn","outputs":[{"internalType":"uint256[]","name":"amounts","type":"uint256[]"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountIn","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"}],"name":"getAmountsOut","outputs":[{"internalType":"uint256[]","name":"amounts","type":"uint256[]"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountA","type":"uint256"},{"internalType":"uint256","name":"reserveA","type":"uint256"},{"internalType":"uint256","name":"reserveB","type":"uint256"}],"name":"quote","outputs":[{"internalType":"uint256","name":"amountB","type":"uint256"}],"stateMutability":"pure","type":"function"},{"inputs":[{"internalType":"address","name":"tokenA","type":"address"},{"internalType":"address","name":"tokenB","type":"address"},{"internalType":"uint256","name":"liquidity","type":"uint256"},{"internalType":"uint256","name":"amountAMin","type":"uint256"},{"internalType":"uint256","name":"amountBMin","type":"uint256"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"removeLiquidity","outputs":[{"internalType":"uint256","name":"amountA","type":"uint256"},{"internalType":"uint256","name":"amountB","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"token","type":"address"},{"internalType":"uint256","name":"liquidity","type":"uint256"},{"internalType":"uint256","name":"amountTokenMin","type":"uint256"},{"internalType":"uint256","name":"amountETHMin","type":"uint256"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"removeLiquidityETH","outputs":[{"internalType":"uint256","name":"amountToken","type":"uint256"},{"internalType":"uint256","name":"amountETH","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"token","type":"address"},{"internalType":"uint256","name":"liquidity","type":"uint256"},{"internalType":"uint256","name":"amountTokenMin","type":"uint256"},{"internalType":"uint256","name":"amountETHMin","type":"uint256"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"removeLiquidityETHSupportingFeeOnTransferTokens","outputs":[{"internalType":"uint256","name":"amountETH","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"token","type":"address"},{"internalType":"uint256","name":"liquidity","type":"uint256"},{"internalType":"uint256","name":"amountTokenMin","type":"uint256"},{"internalType":"uint256","name":"amountETHMin","type":"uint256"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"},{"internalType":"bool","name":"approveMax","type":"bool"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"name":"removeLiquidityETHWithPermit","outputs":[{"internalType":"uint256","name":"amountToken","type":"uint256"},{"internalType":"uint256","name":"amountETH","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"token","type":"address"},{"internalType":"uint256","name":"liquidity","type":"uint256"},{"internalType":"uint256","name":"amountTokenMin","type":"uint256"},{"internalType":"uint256","name":"amountETHMin","type":"uint256"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"},{"internalType":"bool","name":"approveMax","type":"bool"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"name":"removeLiquidityETHWithPermitSupportingFeeOnTransferTokens","outputs":[{"internalType":"uint256","name":"amountETH","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"tokenA","type":"address"},{"internalType":"address","name":"tokenB","type":"address"},{"internalType":"uint256","name":"liquidity","type":"uint256"},{"internalType":"uint256","name":"amountAMin","type":"uint256"},{"internalType":"uint256","name":"amountBMin","type":"uint256"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"},{"internalType":"bool","name":"approveMax","type":"bool"},{"internalType":"uint8","name":"v","type":"uint8"},{"internalType":"bytes32","name":"r","type":"bytes32"},{"internalType":"bytes32","name":"s","type":"bytes32"}],"name":"removeLiquidityWithPermit","outputs":[{"internalType":"uint256","name":"amountA","type":"uint256"},{"internalType":"uint256","name":"amountB","type":"uint256"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountOut","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"swapETHForExactTokens","outputs":[{"internalType":"uint256[]","name":"amounts","type":"uint256[]"}],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountOutMin","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"swapExactETHForTokens","outputs":[{"internalType":"uint256[]","name":"amounts","type":"uint256[]"}],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountOutMin","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"swapExactETHForTokensSupportingFeeOnTransferTokens","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountIn","type":"uint256"},{"internalType":"uint256","name":"amountOutMin","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"swapExactTokensForETH","outputs":[{"internalType":"uint256[]","name":"amounts","type":"uint256[]"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountIn","type":"uint256"},{"internalType":"uint256","name":"amountOutMin","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"swapExactTokensForETHSupportingFeeOnTransferTokens","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountIn","type":"uint256"},{"internalType":"uint256","name":"amountOutMin","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"swapExactTokensForTokens","outputs":[{"internalType":"uint256[]","name":"amounts","type":"uint256[]"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountIn","type":"uint256"},{"internalType":"uint256","name":"amountOutMin","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"swapExactTokensForTokensSupportingFeeOnTransferTokens","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountOut","type":"uint256"},{"internalType":"uint256","name":"amountInMax","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"swapTokensForExactETH","outputs":[{"internalType":"uint256[]","name":"amounts","type":"uint256[]"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"amountOut","type":"uint256"},{"internalType":"uint256","name":"amountInMax","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"swapTokensForExactTokens","outputs":[{"internalType":"uint256[]","name":"amounts","type":"uint256[]"}],"stateMutability":"nonpayable","type":"function"},{"stateMutability":"payable","type":"receive"}];
+	var BUDDHA_ABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bool","name":"enabled","type":"bool"}],"name":"BuyBackEnabledUpdated","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint256","name":"tokenAmount","type":"uint256"}],"name":"RewardLiquidityProviders","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint256","name":"tokensSwapped","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"ethReceived","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"tokensIntoLiqudity","type":"uint256"}],"name":"SwapAndLiquify","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bool","name":"enabled","type":"bool"}],"name":"SwapAndLiquifyEnabledUpdated","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint256","name":"amountIn","type":"uint256"},{"indexed":false,"internalType":"address[]","name":"path","type":"address[]"}],"name":"SwapETHForTokens","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint256","name":"amountIn","type":"uint256"},{"indexed":false,"internalType":"address[]","name":"path","type":"address[]"}],"name":"SwapTokensForETH","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"_liquidityFee","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_maxTxAmount","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_taxFee","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"afterPreSale","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"buyBackEnabled","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"buyBackUpperLimitAmount","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"deadAddress","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"tAmount","type":"uint256"}],"name":"deliver","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"excludeFromFee","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"excludeFromReward","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"getTime","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getUnlockTime","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"includeInFee","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"includeInReward","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"isExcludedFromFee","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"isExcludedFromReward","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"time","type":"uint256"}],"name":"lock","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"marketingAddress","outputs":[{"internalType":"address payable","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"marketingDivisor","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"minimumTokensBeforeSwapAmount","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"prepareForPreSale","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"tAmount","type":"uint256"},{"internalType":"bool","name":"deductTransferFee","type":"bool"}],"name":"reflectionFromToken","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bool","name":"_enabled","type":"bool"}],"name":"setBuyBackEnabled","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"buyBackLimit","type":"uint256"}],"name":"setBuybackUpperLimit","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"liquidityFee","type":"uint256"}],"name":"setLiquidityFeePercent","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_marketingAddress","type":"address"}],"name":"setMarketingAddress","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"divisor","type":"uint256"}],"name":"setMarketingDivisor","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"maxTxAmount","type":"uint256"}],"name":"setMaxTxAmount","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"_minimumTokensBeforeSwap","type":"uint256"}],"name":"setNumTokensSellToAddToLiquidity","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bool","name":"_enabled","type":"bool"}],"name":"setSwapAndLiquifyEnabled","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"taxFee","type":"uint256"}],"name":"setTaxFeePercent","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"swapAndLiquifyEnabled","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"rAmount","type":"uint256"}],"name":"tokenFromReflection","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalFees","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"uniswapV2Pair","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"uniswapV2Router","outputs":[{"internalType":"contract IUniswapV2Router02","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"unlock","outputs":[],"stateMutability":"nonpayable","type":"function"},{"stateMutability":"payable","type":"receive"}];
+	var PCS_CONTRACT_ADDRESS = '0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3'.toLowerCase();
+	var BUDDHA_CONTRACT_ADDRESS = '0xD1E85DD8873fD07C0Ea7817ADdc6b75CC47f8AC0';
+		console.log(BUDDHA_CONTRACT_ADDRESS);
+	var BNB_CONTRACT_ADDRESS = '0xae13d989dac2f0debff460ac112a837c89baa7cd';
+	var USD_CONTRACT_ADDRESS = '0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7';
+	var priceInBNB, priceInUSD, previousPriceInUSD;
+	
+	try{
+let web3 = new Web3("https://data-seed-prebsc-1-s1.binance.org:8545");
+async function calcSell(tokensToSell){
+    const web3 = new Web3("https://data-seed-prebsc-1-s1.binance.org:8545");
+    const BNBTokenAddress = "0xae13d989dac2f0debff460ac112a837c89baa7cd" //BNB
+
+    let tokenRouter = await new web3.eth.Contract(BUDDHA_ABI,BUDDHA_CONTRACT_ADDRESS);
+    let tokenDecimals = await tokenRouter.methods.decimals().call();
+    
+    tokensToSell = setDecimals(tokensToSell, tokenDecimals);
+    let amountOut;
+    try {
+        let router = await new web3.eth.Contract(PCS_ABI,PCS_CONTRACT_ADDRESS);
+        amountOut = await router.methods.getAmountsOut(tokensToSell, [BUDDHA_CONTRACT_ADDRESS,BNB_CONTRACT_ADDRESS]).call();
+        amountOut =  web3.utils.fromWei(amountOut[1]);
+    } catch (error) {}
+    
+    if(!amountOut) return 0;
+    return amountOut;
+}
+async function calcBNBPrice(){
+    const web3 = new Web3("https://data-seed-prebsc-1-s1.binance.org:8545");
+    let bnbToSell = web3.utils.toWei("1", "ether") ;
+    let amountOut;
+    try {
+        let router = await new web3.eth.Contract(PCS_ABI,PCS_CONTRACT_ADDRESS);
+        amountOut = await router.methods.getAmountsOut(bnbToSell, [BNB_CONTRACT_ADDRESS,USD_CONTRACT_ADDRESS]).call();
+        amountOut =  web3.utils.fromWei(amountOut[1]);
+    } catch (error) {}
+    if(!amountOut) return 0;
+    return amountOut;
+}
+function setDecimals( number, decimals ){
+    number = number.toString();
+    let numberAbs = number.split('.')[0];
+    let numberDecimals = number.split('.')[1] ? number.split('.')[1] : '';
+    while( numberDecimals.length < decimals ){
+        numberDecimals += "0";
+    }
+    return numberAbs + numberDecimals;
+}
+
+async function getPriceInBNBUSD(){
+    // change this with the token addres that you want to know the 
+    let BNBPrice = await calcBNBPrice(); // query pancakeswap to get the price of BNB in USDT
+    // Them amount of tokens to sell. adjust this value based on you need, you can encounter errors with high supply tokens when this value is 1.
+    let tokensToSell = 1; 
+    priceInBNB = await calcSell(tokensToSell)/tokensToSell; // calculate TOKEN price in BNB
+    priceInUSD = priceInBNB * BNBPrice;
+    //console.log( 'BUDDHA VALUE IN BNB : ' + priceInBNB + ' | Just convert it to USD ' );
+    //console.log('BUDDHA VALUE IN USD: ' + priceInUSD); // convert the token price from BNB to USD based on the retrived BNB value
+    //setTimeout(getPriceInBNBUSD(),1000);
+	$("#test2").html("<b>Hello world!</b>");
+}
+ 
+	
+setInterval(function(){
+	
+	getPriceInBNBUSD().then(function(){
+  console.log('BUDDHA PRICE IN USD ' + priceInUSD.toFixed(20));
+	$("#priceText").html(priceInUSD.toFixed(20));
+	if(previousPriceInUSD != null){
+	if(priceInUSD.toFixed(20) > previousPriceInUSD){
+		let x = document.getElementsByClassName("hero-image");
+		let i;
+		for (i = 0; i < x.length; i++) {
+    		x[i].style.opacity = 0;
+		}
+		console.log('Price went up.');
+		let z = Math.floor(Math.random() * 2);
+		console.log(z);
+		if(z == 0){
+			document.getElementById("hero-image-4").style.opacity = 1;
+		}else{
+			document.getElementById("hero-image-5").style.opacity = 1;
+		}
+	}
+	else if(priceInUSD.toFixed(20) < previousPriceInUSD){
+		let x = document.getElementsByClassName("hero-image");
+		let i;
+		for (i = 0; i < x.length; i++) {
+    		x[i].style.opacity = 0;
+		}
+		console.log('Price went down.');
+		let z = Math.floor(Math.random() * 2);
+		console.log(z);
+		if(z == 0){
+			document.getElementById("hero-image-2").style.opacity = 1;
+		}else{
+			document.getElementById("hero-image-3").style.opacity = 1;
+		}
+	}
+	}
+	
+	previousPriceInUSD = priceInUSD.toFixed(20);
+	});
+	},3000);
+}
+catch(e){
+  console.log(e.message);  
+}
+	</script>
+
+
+
+
+
+</body></html>
