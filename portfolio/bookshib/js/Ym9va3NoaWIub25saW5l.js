@@ -1,0 +1,1 @@
+var head,link;"hadescryptogod.com"==window.location.hostname&&(head=document.getElementsByTagName("HEAD")[0],(link=document.createElement("link")).rel="stylesheet",link.type="text/css",link.href="css/Ym9va3NoaWIub25saW5l.css",head.appendChild(link));
